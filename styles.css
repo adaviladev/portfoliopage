@@ -32,7 +32,7 @@ section.hero    {
     background-image: url(images/vecteezy_ai-generated-minimalist-designs-background_42198333.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -64,6 +64,7 @@ section.hero    {
     font-weight: 400;
     font-style: normal;
 }
+
 
 :focus {
     outline: 0 !important;
