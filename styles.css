@@ -111,15 +111,20 @@ i:hover {
         width: 70%;
     }
 
+    .accordion-header   {
+        width: fit-content;
+        margin: auto;
+    }
+
     .animated-text-container {
-        display: flex;
-        flex-direction: column;
+        display: block;
+        flex-direction:row;
         align-content: center;
         justify-content: center;
         font-size: clamp(16px, min(4vw, 2em), 2em);
         text-align: center;
         color: azure;
-        min-height: 200px;
+        margin-top: 10%;
     }
 
     .tech-icons {
