@@ -3,6 +3,9 @@
     --color-primary: #1C1C1C;
     --color-secondary: #1c6fec;
     --color-accent: #007ecc;
+    --color-frontendev: rgb(224, 14, 84);
+    --color-name: rgb(53, 53, 54);
+    --color-main-text:#d3cdcd;
 }
 
 .play-regular {
@@ -29,9 +32,9 @@ section.hero    {
 }
 
 .main-container {
-    background-image: url(images/vecteezy_ai-generated-minimalist-designs-background_42198333.jpg);
+    background-image: url(images/vecteezy_dark-and-matte-dynamic-metallic-texture-background_45678723.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -39,11 +42,14 @@ section.hero    {
 }
 
 .animated-text-1    {
-    color: rgb(191, 199, 207);
+    padding-top: 10%;
+    color: var(--color-name);
+    text-shadow: 1px 1px #fffcfc;
 }
 
 .animated-text-2    {
-    color: rgb(115, 131, 145);
+    color: var(--color-frontendev);
+    text-shadow: 1px 1px #444343;
 }
 
 .animated-text-container {
@@ -65,16 +71,22 @@ section.hero    {
     text-align: center;
     padding-left: 5%;
     padding-right: 5%;
-    color:rgb(188, 223, 253);
+    color:#fffcfc;
     text-shadow: 2px 1px #444343;
 }
 
 .accordion-button   {
     font-family: "Play", sans-serif;
-    font-weight: 400;
+    font-weight: 200;
     font-style: normal;
+
 }
 
+.accordion-item {
+    margin: 10px; /* Cambia el valor según lo que necesites */
+    padding: 0px; /* Cambia el valor según lo que necesites */
+
+}
 
 :focus {
     outline: 0 !important;
@@ -105,8 +117,24 @@ i:hover {
 }
 
 .contact    {
-    background-color:aliceblue !important;
     margin-bottom: 10px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-icons  {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.social {
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), transparent) !important;
+    display: flex;
+    justify-content: flex-end;
+    align-items:flex-start;
+    width: 100vw;
 }
 
 @media (min-width: 600px) {
@@ -146,12 +174,7 @@ i:hover {
         margin-bottom: 5%;
     }
 
-    .tech-icons {
-        margin-top: 5%;
-
-    }
-
     button:hover    {
-        transform: scale(1.2); /* Scale the icon up by 20% on hover */
+        transform: scale(1.1); /* Scale the icon up by 20% on hover */
     }
 }
