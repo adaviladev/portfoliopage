@@ -10,12 +10,23 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
   <!-- Icons -->
   <script src="https://kit.fontawesome.com/877d51e80c.js" crossorigin="anonymous"></script>
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
 </head>
 
 <body>
@@ -34,19 +45,11 @@
 
     </div>
     <div class="main-container">
-      <div class="name-title-container">
-        <h1 class="play-bold">Álvaro Dávila</h1><br>
-        <h2 class="play-regular">Frontend Developer</h2>
+      <div class="name-title-container play-regular">
+        <h1>Álvaro Dávila</h1><br>
+        <h2>Frontend Developer</h2>
       </div>
-      <div class="tech-icons">
-        <i class="fa-brands fa-html5"></i>
-        <i class="fa-brands fa-css3-alt"></i>
-        <i class="fa-brands fa-js"></i>
-        <i class="fa-brands fa-bootstrap"></i>
-        <i class="fa-brands fa-react"></i>
-        <i class="fa-brands fa-sass"></i>
-      </div>
-      <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-flush" id="accordionFlushExample">
         <div class="accordion-item bg-transparent about">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed bg-transparent text-white d-block text-center fs-4" type="button"
@@ -56,7 +59,7 @@
             </button>
           </h2>
           <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body border border-secondary-subtle text-white">
+            <div class="accordion-body text-white p-4">
               <p>Hi! My name is Álvaro Dávila and I'm a Frontend developer and I enjoy building engaging digital
                 interfaces.</p>
               <p>I'm skilled in HTML, CSS, JavaScript, and React.</p>
@@ -65,17 +68,37 @@
             </div>
           </div>
         </div>
-        <!-- Projects Accordion Menu -->
-        <div class="accordion-item bg-transparent projects">
+        <div class="accordion-item bg-transparent tech stack">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed bg-transparent text-white d-block text-center fs-4" type="button"
               data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
               aria-controls="flush-collapseTwo">
-              Projects
+              Tech Stack
             </button>
           </h2>
           <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body border border-secondary-subtle text-white">
+            <div class="accordion-body text-white d-flex justify-content-evenly p-4">
+              <div class="tech-icons">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-js"></i>
+                <i class="fa-brands fa-bootstrap"></i>
+                <i class="fa-brands fa-react"></i>
+                <i class="fa-brands fa-sass"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item bg-transparent projects">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-transparent text-white d-block text-center fs-4 mb-2"
+              type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+              aria-controls="flush-collapseThree">
+              Projects
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body text-white p-4">
               <p>This is a selection of projects I have been working recently.</p><br>
               <!-- Projects wrapper -->
               <div class="row row-cols-1 row-cols-md-2 g-4">
@@ -88,7 +111,9 @@
                     </a>
                     <div class="card-body">
                       <h5 class="card-title">Translator Website</h5>
-                      <p class="card-text">Álvaro Dávila's website showcases professional translation services in English, Japanese, Portuguese, and Spanish, complemented by rotating testimonials and an interactive blog navigation.</p>
+                      <p class="card-text">Álvaro Dávila's website showcases professional translation services in
+                        English, Japanese, Portuguese, and Spanish, complemented by rotating testimonials and an
+                        interactive blog navigation.</p>
                       <a href="https://github.com/adaviladev/adavilatr" target="_blank">Ver en GitHub</a>
                       <a href="https://adaviladev.github.io/adavilatr/" target="_blank">Ver en Vivo</a>
                     </div>
@@ -98,12 +123,14 @@
                 <div class="col">
                   <div class="card">
                     <a href="https://codepen.io/adaviladev/full/abgzKbG" target="_blank">
-                      <div class="project-image-container"><img src="images/cards/Todo.png"
-                          class="card-img-top" alt="..."></div>
+                      <div class="project-image-container"><img src="images/cards/Todo.png" class="card-img-top"
+                          alt="..."></div>
                     </a>
                     <div class="card-body">
                       <h5 class="card-title">Todo List</h5>
-                      <p class="card-text">This app manages a task list where users can add, edit, mark as completed, delete tasks, and clear completed tasks. It includes local storage integration for persistent data, character limit enforcement, and dynamic UI updates based on user interactions.</p>
+                      <p class="card-text">This app manages a task list where users can add, edit, mark as completed,
+                        delete tasks, and clear completed tasks. It includes local storage integration for persistent
+                        data, character limit enforcement, and dynamic UI updates based on user interactions.</p>
                       <a href="https://github.com/adaviladev/pf-task-manager" target="_blank">Ver en GitHub</a>
                       <a href="https://codepen.io/adaviladev/full/abgzKbG" target="_blank">Ver en Vivo</a>
                     </div>
@@ -118,14 +145,17 @@
                     </a>
                     <div class="card-body">
                       <h5 class="card-title">Geolocalizador IP</h5>
-                      <p class="card-text">This app fetches geolocation information based on an IP address input by the user. It utilizes the RapidAPI service to retrieve JSON-formatted data including details such as country, city, region, and coordinates. The interface updates dynamically upon submission, displaying the fetched data in a structured format.</p>
+                      <p class="card-text">This app fetches geolocation information based on an IP address input by the
+                        user. It utilizes the RapidAPI service to retrieve JSON-formatted data including details such as
+                        country, city, region, and coordinates. The interface updates dynamically upon submission,
+                        displaying the fetched data in a structured format.</p>
                       <a href="https://github.com/adaviladev/pf-API-data-show" target="_blank">Ver en GitHub</a>
                       <a href="https://majestic-selkie-439088.netlify.app/" target="_blank">Ver en Vivo</a>
                     </div>
                   </div>
                 </div>
-                 <!-- Project 4 Card -->
-                 <div class="col">
+                <!-- Project 4 Card -->
+                <div class="col">
                   <div class="card">
                     <a href="https://codepen.io/adaviladev/full/KKLZOmP" target="_blank">
                       <div class="project-image-container"><img src="images/cards/previsualizadormarkdown.png"
@@ -133,43 +163,50 @@
                     </a>
                     <div class="card-body">
                       <h5 class="card-title">Markdown to HTML Converter</h5>
-                      <p class="card-text">This app is a Markdown editor built using React and Redux. It allows users to input Markdown text in a textarea, which is then parsed into HTML using the `marked` library and displayed in real-time in a preview pane. Users can see formatted text, including headers, links, code blocks, lists, blockquotes, images, and styled text. The application uses Redux for state management, with actions to update the Markdown content and a connected component to manage the editor's state.</p>
+                      <p class="card-text">This app is a Markdown editor built using React and Redux. It allows users to
+                        input Markdown text in a textarea, which is then parsed into HTML using the `marked` library and
+                        displayed in real-time in a preview pane. The application uses Redux for
+                        state management, with actions to update the Markdown content and a connected component to
+                        manage the editor's state.</p>
                       <a href="https://codepen.io/adaviladev/full/KKLZOmP" target="_blank">Ver en GitHub</a>
                       <a href="https://codepen.io/adaviladev/full/KKLZOmP" target="_blank">Ver en Vivo</a>
                     </div>
                   </div>
                 </div>
-                  <!-- Project 5 Card -->
-                  <div class="col">
-                    <div class="card">
-                      <a href="https://adaviladevs-pokemonsearch.netlify.app/" target="_blank">
-                        <div class="project-image-container"><img src="images/cards/pokemonapp.png"
-                            class="card-img-top" alt="..."></div>
-                      </a>
-                      <div class="card-body">
-                        <h5 class="card-title">Pokémon Search App</h5>
-                        <p class="card-text">This app fetches and displays Pokémon information based on user input or a random selection. It features dynamic updates of Pokémon name, ID, weight, height, sprite, and various stats (HP, attack, defense, special attack, special defense, speed) fetched from the PokeAPI.</p>
-                        <a href="https://github.com/adaviladev/pf-pokemon-search-app" target="_blank">Ver en GitHub</a>
-                        <a href="https://adaviladevs-pokemonsearch.netlify.app/" target="_blank">Ver en Vivo</a>
-                      </div>
+                <!-- Project 5 Card -->
+                <div class="col">
+                  <div class="card">
+                    <a href="https://adaviladevs-pokemonsearch.netlify.app/" target="_blank">
+                      <div class="project-image-container"><img src="images/cards/pokemonapp.png" class="card-img-top"
+                          alt="..."></div>
+                    </a>
+                    <div class="card-body">
+                      <h5 class="card-title">Pokémon Search App</h5>
+                      <p class="card-text">This app fetches and displays Pokémon information based on user input or a
+                        random selection. It features dynamic updates of Pokémon name, ID, weight, height, sprite, and
+                        various stats (HP, attack, defense, special attack, special defense, speed) fetched from the
+                        PokeAPI.</p>
+                      <a href="https://github.com/adaviladev/pf-pokemon-search-app" target="_blank">Ver en GitHub</a>
+                      <a href="https://adaviladevs-pokemonsearch.netlify.app/" target="_blank">Ver en Vivo</a>
                     </div>
                   </div>
-                   <!-- Project 6 Card -->
+                </div>
+                <!-- Project 6 Card -->
               </div>
               <!-- End of Projects Wrapper -->
             </div>
           </div>
         </div>
-        <div class="accordion-item bg-transparent">
+        <div class="accordion-item bg-transparent contact">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed bg-transparent text-white d-block text-center fs-4" type="button"
-              data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
-              aria-controls="flush-collapseThree">
+              data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false"
+              aria-controls="flush-collapseFour">
               Contact
             </button>
           </h2>
-          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body border border-secondary-subtle text-white contact">
+          <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body text-white p-4 contact">
               <div class="contact-icons"><i class="m-2 fa-brands fa-square-whatsapp"></i>
                 <p>+569 8183 8598</p>
               </div>
