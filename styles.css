@@ -163,7 +163,7 @@ section.hero {
 }
 
 .main-container {
-    background-color: #202121;
+    background-color: #16171b;
     min-height: 85vh;
     width: 100%;
     display: flex;
@@ -178,7 +178,7 @@ section.hero {
     text-align: center;
     padding-left: 5%;
     padding-right: 5%;
-    margin-top: 12%;
+    margin-top: 5%;
     margin-bottom: 10%;
     display: flex;
     flex-direction: column;
@@ -314,7 +314,7 @@ i:hover {
         /* Center horizontally */
         min-height: 100%;
         height: fit-content;
-        width: 80%;
+        width: 50%;
     }
 
     .accordion {
@@ -338,8 +338,7 @@ i:hover {
         flex-shrink: 1;
         text-align: center;
         color: azure;
-        margin-top: 5%;
-        margin-bottom: 5%;
+
     }
 
     button:hover {
@@ -349,5 +348,6 @@ i:hover {
 
     .accordion-flush {
         width: 90% !important;
+        margin-bottom: 6vh;
     }
 }
