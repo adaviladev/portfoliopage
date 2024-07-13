@@ -174,7 +174,7 @@ section.hero {
 
 .name-title-container {
     align-content: center;
-    font-size: clamp(32px, min(4vw, 2em), 2em);
+    font-size: clamp(32px, min(4vw, 5em), 2em);
     text-align: center;
     padding-left: 5%;
     padding-right: 5%;
@@ -200,6 +200,10 @@ section.hero {
     font-weight: 200;
     font-style: normal;
 
+}
+
+.accordion-header .accordion-button {
+    font-size: 30px !important;
 }
 
 .accordion-item {
@@ -299,9 +303,6 @@ i:hover {
     visibility: visible;
     opacity: 1;
 }
-
-
-
 
 @media (min-width: 600px) {
 
