@@ -164,7 +164,7 @@ section.hero {
 
 .main-container {
     background-color: #202121;
-    min-height: 100vh;
+    min-height: 95vh;
     width: 100%;
     display: flex;
     flex-direction: column;
