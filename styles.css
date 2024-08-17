@@ -184,11 +184,9 @@ section.hero {
 
 .tech-icons {
   font-size: clamp(24px, min(4vw, 2em), 2em);
-  text-align: center;
-  padding-left: 5%;
-  padding-right: 5%;
-  color: #fffcfc;
-  text-shadow: 2px 1px #444343;
+  padding-left: 10px;
+  color: #ffffff;
+  margin-left: 5px!important;
 }
 
 .accordion-body {
@@ -204,6 +202,10 @@ section.hero {
 
 .accordion-header .accordion-button {
   font-size: 30px !important;
+}
+
+.accordion-header {
+  margin-left: 10px!important;
 }
 
 .accordion-item {
@@ -343,7 +345,7 @@ i:hover {
   }
 
   .name-title-container > h1 {
-    color: rgb(165, 163, 163);
+  color: rgb(181, 180, 180);
   }
 
   .name-title-container > h2 {
@@ -368,6 +370,7 @@ i:hover {
     max-width: 40% !important;
     padding: 12px;
     border: 1px solid;
+
   }
 
   .projects > p {
@@ -391,7 +394,7 @@ i:hover {
 }
 
 .name-title-container > h1 {
-  color: rgb(165, 163, 163);
+  color: rgb(181, 180, 180);
 }
 
 .name-title-container > h2 {
@@ -407,5 +410,7 @@ button {
   background-color: transparent!important;
   color: white!important;
   border: 1px solid rgb(106, 103, 103)!important;
-  height: 550px!important
+  height: 550px!important;
+  border-radius: 0!important;
+
 }
