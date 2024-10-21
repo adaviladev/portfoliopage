@@ -138,16 +138,39 @@
   font-style: italic;
 }
 
+/* End of Fonts */
+
+/* 
+* {
+  outline: 1px solid white !important;
+} */
+
+h3 {
+  color: #ece2bd;
+}
+
 p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
+  color: #ece2bd;
 }
 
-/* End of Fonts */
+a:active {
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: underline;
+  color: white;
+}
+
+a:visited {
+  color: #a3a096;
+}
 
 html {
-  background-color: #363737;
+  background-color: #0b0a09;
 }
 
 section.hero {
@@ -156,7 +179,7 @@ section.hero {
   align-items: center;
   align-content: center;
   justify-content: center;
-  background-color: #08080b;
+  background-color: #0b0a09;
 }
 
 .main-container {
@@ -166,12 +189,12 @@ section.hero {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid rgb(147, 37, 37);
+  border: 1px solid #ece2bd;
   opacity: 0.9;
 }
 
 .name-title-container {
-  font-size: clamp(32px, min(4vw, 5em), 2em);
+  width: 95%;
   padding-left: 5%;
   padding-right: 5%;
   margin-top: 5%;
@@ -179,14 +202,18 @@ section.hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: #f3fbff;
+  color: #ece2bd;
 }
 
 .tech-icons {
-  font-size: clamp(24px, min(4vw, 2em), 2em);
+  font-size: clamp(18px, min(4vw, 2em), 2em);
   padding-left: 10px;
-  color: #ffffff;
-  margin-left: 5px!important;
+  color: #ece2bd;
+  margin-left: 5px !important;
+}
+
+.fa-brands {
+  font-size: clamp(18px, min(4vw, 2em), 2em);
 }
 
 .accordion-body {
@@ -198,6 +225,8 @@ section.hero {
   font-family: "Play", sans-serif;
   font-weight: 200;
   font-style: normal;
+  color: #ece2bd !important;
+  border: 1px solid #ece2bd !important;
 }
 
 .accordion-header .accordion-button {
@@ -205,7 +234,7 @@ section.hero {
 }
 
 .accordion-header {
-  margin-left: 10px!important;
+  margin-left: 10px !important;
 }
 
 .accordion-item {
@@ -223,6 +252,7 @@ section.hero {
 i:hover {
   transform: scale(1.2);
   /* Scale the icon up by 20% on hover */
+  color: #dd3028 !important;
 }
 
 .image-link {
@@ -231,7 +261,6 @@ i:hover {
 
 .project-image-container {
   overflow: hidden;
-  /* Ensure the image doesn't overflow the container */
 }
 
 .card-img-top {
@@ -291,7 +320,7 @@ i:hover {
   visibility: hidden;
   width: 120px;
   background-color: black;
-  color: #fff;
+  color: #ece2bd;
   text-align: center;
   border-radius: 5px;
   padding: 5px 0;
@@ -308,6 +337,7 @@ i:hover {
   visibility: visible;
   opacity: 1;
 }
+
 
 @media (min-width: 600px) {
   .main-container {
@@ -341,20 +371,21 @@ i:hover {
     align-content: center;
     justify-content: center;
     flex-shrink: 1;
-    color: rgb(165, 163, 163);
+    color: #ece2bd;
   }
 
   .name-title-container > h1 {
-  color: rgb(181, 180, 180);
+    color: #ece2bd;
   }
 
   .name-title-container > h2 {
-    color: rgb(213, 43, 43);
+    color: #dd3028;
   }
 
   button:hover {
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
     /* Scale the icon up by 20% on hover */
+    background-color: #DD3028 !important;
   }
 
   .accordion-flush {
@@ -363,14 +394,13 @@ i:hover {
   }
 
   .name-title-container > h1 {
-    font-size: 9.5rem !important;
+    font-size: 6.5rem !important;
   }
 
   .about-me > p {
     max-width: 40% !important;
     padding: 12px;
     border: 1px solid;
-
   }
 
   .projects > p {
@@ -387,6 +417,10 @@ i:hover {
     margin-top: 20px;
     margin-bottom: 20px;
   }
+
+  .fa-brands {
+    font-size: clamp(18px, min(2vw, 2em), 2em);
+  }
 }
 
 .name-title-container > h1 {
@@ -394,11 +428,11 @@ i:hover {
 }
 
 .name-title-container > h1 {
-  color: rgb(181, 180, 180);
+  color: #ece2bd;
 }
 
 .name-title-container > h2 {
-  color: rgb(213, 43, 43);
+  color: #dd3028;
 }
 
 button {
@@ -407,10 +441,9 @@ button {
 }
 
 .card {
-  background-color: transparent!important;
-  color: white!important;
-  border: 1px solid rgb(106, 103, 103)!important;
-  height: 550px!important;
-  border-radius: 0!important;
-
+  background-color: transparent !important;
+  color: #ece2bd !important;
+  border: 1px solid rgb(106, 103, 103) !important;
+  height: 550px !important;
+  border-radius: 0 !important;
 }
