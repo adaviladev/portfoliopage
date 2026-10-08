@@ -694,3 +694,53 @@ button {
 .project-placeholder-tasks { background: #253d37; }
 .project-placeholder-game { background: #36304a; }
 .project-placeholder-design { background: #44382d; }
+
+/* Contact stays visible and shares the projects section's alignment. */
+.portfolio-contact {
+  width: calc(100% - 20px);
+  max-width: 1120px;
+  margin: 3rem auto 1rem;
+  padding: 2.5rem 0;
+  border-top: 1px solid #514e43;
+  scroll-margin-top: 2rem;
+}
+.portfolio-contact .contact-eyebrow { color: #c4b895; font-size: .75rem; letter-spacing: .16em; margin-bottom: .75rem; }
+.portfolio-contact h2 { font-family: "Play", sans-serif; font-size: clamp(2rem, 5vw, 3rem); color: #f5f1e8; margin-bottom: 1rem; }
+.contact-intro { max-width: 55ch; color: #c9c5b8; line-height: 1.7; }
+.contact-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem 1.5rem; margin: 1.5rem 0 1rem; }
+.contact-actions a { display: inline-flex; align-items: center; gap: .625rem; min-height: 44px; color: #ece2bd; text-underline-offset: .25em; }
+.contact-actions .contact-primary { padding: .75rem 1.125rem; background: #ece2bd; color: #111219; border-radius: 6px; font-weight: 600; text-decoration: none; }
+.contact-actions .contact-primary:hover { background: #ffffff; }
+.contact-actions i { font-size: 1.25rem; }
+.contact-actions i:hover { transform: none; color: inherit !important; }
+.contact-email, .contact-phone { overflow-wrap: anywhere; line-height: 1.7; }
+.portfolio-contact .contact-email a, .portfolio-contact .contact-phone a { color: #ece2bd; text-underline-offset: .25em; }
+.contact-phone { color: #c9c5b8; font-size: .9rem; margin-bottom: 0; }
+.name-title-container .hero-contact-link { display: inline-flex; align-items: center; align-self: flex-start; gap: .625rem; min-height: 44px; margin-top: .75rem; color: #ece2bd; text-underline-offset: .25em; }
+@media (min-width: 600px) {
+  .portfolio-contact { width: 100%; }
+}
+
+/* Native anchor navigation works with keyboard and without JavaScript. */
+#top {
+  scroll-margin-top: 2rem;
+}
+
+.portfolio-contact .back-to-top {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .625rem;
+  min-height: 44px;
+  padding: .625rem 1rem;
+  margin-top: 2rem;
+  border: 1px solid #c4b895;
+  border-radius: 6px;
+  color: #ece2bd;
+  text-decoration: none;
+}
+
+.portfolio-contact .back-to-top:hover {
+  background: #ece2bd;
+  color: #111219;
+}

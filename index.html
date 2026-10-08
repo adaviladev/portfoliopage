@@ -47,7 +47,7 @@
     </div> -->
     <div class="main-container m-4 p-2">
       <div class="name-title-container play-regular">
-        <h1>Álvaro Dávila</h1><br>
+        <h1 id="top" tabindex="-1">Álvaro Dávila</h1><br>
         <p class="professional-title">Frontend Developer</p>
         <div>
           <a class="text-decoration-none text-reset" href="https://github.com/adaviladev" aria-label="GitHub profile (opens in a new tab)" target="_blank" rel="noopener noreferrer">
@@ -60,6 +60,7 @@
             <i class="fa-brands fa-instagram m-3" aria-hidden="true"></i>
           </a>
         </div>
+        <a class="hero-contact-link" href="#contact">Contact <span aria-hidden="true">↗</span></a>
       </div>
       <div class="accordion-flush" id="accordionFlushExample">
         <div class="accordion-item bg-transparent about">
@@ -267,26 +268,19 @@
             </article>
           </div>
         </section>
-        <div class="accordion-item bg-transparent contact">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed bg-transparent  d-block text-center fs-4 mb-2"
-              type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false"
-              aria-controls="flush-collapseFour">
-              Contact
-            </button>
-          </h2>
-          <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body  p-2 contact">
-              <div class="contact-icons">
-                <i class="m-2 fa-brands fa-square-whatsapp" aria-hidden="true"></i>
-                <a href="tel:+56981838598">+569 8183 8598</a>
-              </div>
-              <div class="contact-icons"><i class="m-2 fa-solid fa-envelope" aria-hidden="true"></i>
-                <a href="mailto:alvarodaviladev@gmail.com">alvarodaviladev@gmail.com</a>
-              </div>
-            </div>
+        <section class="portfolio-contact" id="contact" aria-labelledby="contact-heading" tabindex="-1">
+          <p class="contact-eyebrow">CONTACT</p>
+          <h2 id="contact-heading">Let’s work together</h2>
+          <p class="contact-intro">Have a frontend opportunity in mind? I’d be happy to hear from you.</p>
+          <div class="contact-actions">
+            <a class="contact-primary" href="mailto:alvarodaviladev@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i>Email me</a>
+            <a href="https://www.linkedin.com/in/alvarodavilapinto/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (opens in a new tab)"><i class="fa-brands fa-linkedin" aria-hidden="true"></i>LinkedIn</a>
+            <a href="https://github.com/adaviladev" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile (opens in a new tab)"><i class="fa-brands fa-github" aria-hidden="true"></i>GitHub</a>
           </div>
-        </div>
+          <p class="contact-email"><a href="mailto:alvarodaviladev@gmail.com">alvarodaviladev@gmail.com</a></p>
+          <p class="contact-phone">Phone: <a href="tel:+56981838598">+56 9 8183 8598</a></p>
+          <a class="back-to-top" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+        </section>
       </div>
     </div>
   </main>
