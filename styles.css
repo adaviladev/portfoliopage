@@ -408,11 +408,6 @@ i:hover {
     font-size: 6.5rem !important;
   }
 
-  .about-me > p {
-    max-width: 40% !important;
-    padding: 12px;
-    border: 1px solid;
-  }
 
   .projects > p {
     max-width: 40% !important;
@@ -639,4 +634,15 @@ button {
   .tech-stack-groups { grid-template-columns: minmax(0, 1fr); }
   .tech-stack-group h3, .tech-stack-intro { text-align: center; }
   .tech-stack-list { justify-content: center; }
+}
+
+/* Comfortable line length and spacing for the About text. */
+.about-me > p {
+  max-width: 65ch;
+  line-height: 1.75;
+  margin: 0 0 1.25rem;
+}
+
+.about-me > p:last-child {
+  margin-bottom: 0;
 }
