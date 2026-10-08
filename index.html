@@ -67,9 +67,7 @@
           <h2 class="accordion-header">
             <button class="accordion-button collapsed bg-transparent  d-block text-center fs-4" type="button"
               data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
-              aria-controls="flush-collapseOne">
-              About
-            </button>
+              aria-controls="flush-collapseOne">About<span class="disclosure-sign" aria-hidden="true"><span class="disclosure-plus">+</span><span class="disclosure-minus">−</span></span></button>
           </h2>
           <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
             <div class="accordion-body about-me  p-2">
@@ -85,9 +83,7 @@
           <h2 class="accordion-header">
             <button class="accordion-button collapsed bg-transparent  d-block text-center fs-4" type="button"
               data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
-              aria-controls="flush-collapseTwo">
-              Tech Stack
-            </button>
+              aria-controls="flush-collapseTwo">Tech Stack<span class="disclosure-sign" aria-hidden="true"><span class="disclosure-plus">+</span><span class="disclosure-minus">−</span></span></button>
           </h2>
           <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
             <div class="accordion-body tech-stack">
@@ -133,10 +129,14 @@
             </div>
           </div>
         </div>
-        <section class="portfolio-projects" id="projects" aria-labelledby="projects-heading">
+        <div class="accordion-item bg-transparent projects-menu">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-transparent d-block text-center fs-4" id="projects-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#projects" aria-expanded="false" aria-controls="projects">Projects<span class="disclosure-sign" aria-hidden="true"><span class="disclosure-plus">+</span><span class="disclosure-minus">−</span></span></button>
+          </h2>
+          <div class="accordion-collapse collapse" id="projects" data-bs-parent="#accordionFlushExample" role="region" aria-labelledby="projects-toggle">
+            <div class="portfolio-projects">
           <header class="projects-intro">
             <p class="projects-eyebrow">SELECTED WORK</p>
-            <h2 id="projects-heading">Projects</h2>
             <p>A selection of my web development work and interface design proposals.</p>
           </header>
           <div class="projects-grid">
@@ -267,7 +267,9 @@
               </div>
             </article>
           </div>
-        </section>
+        </div>
+          </div>
+        </div>
         <section class="portfolio-contact" id="contact" aria-labelledby="contact-heading" tabindex="-1">
           <p class="contact-eyebrow">CONTACT</p>
           <h2 id="contact-heading">Let’s work together</h2>

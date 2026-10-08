@@ -744,3 +744,45 @@ button {
   background: #ece2bd;
   color: #111219;
 }
+
+/* Projects opens from the same accordion menu as About and Tech Stack. */
+.projects-menu .portfolio-projects {
+  width: 100%;
+  margin: 1.5rem 0;
+  padding: 1rem 0;
+  border-top: 0;
+}
+
+/* Tighten the hero-to-menu gap while preserving the original button styling. */
+.main-container {
+  justify-content: flex-start;
+}
+
+.main-container > .name-title-container {
+  margin-bottom: 2rem;
+}
+
+.accordion-header .accordion-button::after {
+  display: none;
+}
+
+.disclosure-sign {
+  position: absolute;
+  right: .35rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: .875rem;
+  line-height: 1;
+}
+
+.disclosure-minus {
+  display: none;
+}
+
+.accordion-button[aria-expanded="true"] .disclosure-plus {
+  display: none;
+}
+
+.accordion-button[aria-expanded="true"] .disclosure-minus {
+  display: inline;
+}
