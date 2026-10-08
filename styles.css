@@ -518,3 +518,93 @@ button {
     transform: none;
   }
 }
+
+/* Always-visible portfolio projects */
+.portfolio-projects {
+  width: calc(100% - 20px);
+  max-width: 1120px;
+  margin: 3rem auto;
+  padding: 2rem 0;
+  border-top: 1px solid #514e43;
+}
+.projects-intro { max-width: 42rem; margin-bottom: 1.75rem; }
+.projects-intro .projects-eyebrow { color: #c4b895; font-size: .75rem; letter-spacing: .16em; margin-bottom: .5rem; }
+.projects-intro h2 { font-family: "Play", sans-serif; color: #ece2bd; font-size: clamp(2rem, 5vw, 3rem); }
+.projects-intro > p:last-child { color: #c9c5b8; line-height: 1.6; }
+.projects-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
+.project-card { display: flex; flex-direction: column; min-width: 0; background: #111219; border: 1px solid #514e43; border-radius: 12px; }
+.project-preview { display: block; border-radius: 11px 11px 0 0; overflow: hidden; background: #1b1c24; }
+.project-preview img { display: block; width: 100%; height: auto; aspect-ratio: 8 / 5; object-fit: contain; }
+.project-details { display: flex; flex-direction: column; flex: 1; padding: 1.5rem; }
+.project-details h3 { font-family: "Play", sans-serif; font-size: 1.4rem; margin-bottom: .75rem; }
+.project-details > p { color: #c9c5b8; line-height: 1.65; margin-bottom: 1.25rem; }
+.project-tags { display: flex; flex-wrap: wrap; gap: .5rem; list-style: none; padding: 0; margin: auto 0 1.5rem; }
+.project-tags li { color: #ece2bd; background: #252630; border-radius: 4px; padding: .3rem .6rem; font-size: .8rem; }
+.project-links { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; border-top: 1px solid #514e43; padding-top: .75rem; }
+.project-links a { display: inline-flex; align-items: center; gap: .5rem; min-height: 44px; color: #ece2bd; text-underline-offset: .25em; }
+.project-links a:hover { color: #ffffff; }
+@media (max-width: 767.98px) {
+  .projects-grid { grid-template-columns: minmax(0, 1fr); }
+  .project-details { padding: 1.125rem; }
+}
+
+/* Shared left edge for desktop content and project cards. */
+@media (min-width: 600px) {
+  .main-container > .name-title-container,
+  .main-container > .accordion-flush {
+    width: calc(100% - 40px) !important;
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .accordion-flush > .accordion-item {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .accordion-header {
+    margin-left: 0 !important;
+    margin-right: 0;
+  }
+
+  .accordion-body {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .portfolio-projects {
+    width: 100%;
+  }
+
+  .tech-icons {
+    padding-left: 0;
+    margin-left: 0 !important;
+  }
+
+  .contact-icons {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    overflow-wrap: anywhere;
+  }
+
+  .name-title-container > div {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .name-title-container > div > a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+  }
+
+  .name-title-container > div > a > i {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}

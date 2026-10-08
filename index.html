@@ -105,115 +105,85 @@
             </div>
           </div>
         </div>
-        <div class="accordion-item bg-transparent projects">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed bg-transparent  d-block text-center fs-4 mb-2"
-              type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
-              aria-controls="flush-collapseThree">
-              Projects
-            </button>
-          </h2>
-          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body projects   p-2">
-              <p>This is a selection of projects I have been working on recently.</p><br>
-              <!-- Projects wrapper -->
-              <div class="row row-cols-1 row-cols-md-2 g-4">
-                <!-- Project 1 Card -->
-                <div class="col">
-                  <div class="card bg-transparent">
-                    <a href="https://adaviladev.github.io/adavilatr/" target="_blank" rel="noopener noreferrer">
-                      <div class="project-image-container"><img src="images/cards/translatorwebsite.png"
-                          class="card-img-top" alt="Translator Website — view live site"></div>
-                    </a>
-                    <div class="card-body ">
-                      <h3 class="card-title h5">Translator Website</h3>
-                      <p class="card-text">Álvaro Dávila's website showcases professional translation services in
-                        English, Japanese, Portuguese, and Spanish, complemented by rotating testimonials and an
-                        interactive blog navigation.</p>
-                      <a href="https://github.com/adaviladev/adavilatr" target="_blank" rel="noopener noreferrer">GitHub repository</a>
-                      <a href="https://adaviladev.github.io/adavilatr/" target="_blank" rel="noopener noreferrer">View live site</a>
-                    </div>
-                  </div>
+        <section class="portfolio-projects" id="projects" aria-labelledby="projects-heading">
+          <header class="projects-intro">
+            <p class="projects-eyebrow">SELECTED WORK</p>
+            <h2 id="projects-heading">Projects</h2>
+            <p>From service websites to interactive apps: a selection of what I have built.</p>
+          </header>
+          <div class="projects-grid">
+            <article class="project-card" aria-labelledby="project-title-1">
+              <a class="project-preview" href="https://adaviladev.github.io/adavilatr/" target="_blank" rel="noopener noreferrer" aria-label="View Translator Website live (opens in a new tab)">
+                <img src="images/cards/translatorwebsite.png" alt="Translator Website interface" loading="lazy" width="800" height="500">
+              </a>
+              <div class="project-details">
+                <h3 id="project-title-1">Translator Website</h3>
+                <p>A website presenting translation services in four languages, with rotating testimonials and interactive blog navigation.</p>
+                <ul class="project-tags" aria-label="Technologies and features"><li>Service website</li><li>Interactive UI</li></ul>
+                <div class="project-links">
+                  <a href="https://adaviladev.github.io/adavilatr/" target="_blank" rel="noopener noreferrer" aria-label="View Translator Website live (opens in a new tab)">View project <span aria-hidden="true">↗</span></a>
+                  <a href="https://github.com/adaviladev/adavilatr" target="_blank" rel="noopener noreferrer" aria-label="View Translator Website source code (opens in a new tab)">View code <span aria-hidden="true">↗</span></a>
                 </div>
-                <!-- Project 2 Card -->
-                <div class="col">
-                  <div class="card">
-                    <a href="https://codepen.io/adaviladev/full/abgzKbG" target="_blank" rel="noopener noreferrer">
-                      <div class="project-image-container"><img src="images/cards/Todo.png" class="card-img-top"
-                          alt="Todo List — view live app"></div>
-                    </a>
-                    <div class="card-body">
-                      <h3 class="card-title h5">Todo List</h3>
-                      <p class="card-text">This app manages a task list where users can add, edit, mark as completed,
-                        delete tasks, and clear completed tasks. It includes local storage integration for persistent
-                        data, character limit enforcement, and dynamic UI updates based on user interactions.</p>
-                      <a href="https://github.com/adaviladev/pf-task-manager" target="_blank" rel="noopener noreferrer">GitHub repository</a>
-                      <a href="https://codepen.io/adaviladev/full/abgzKbG" target="_blank" rel="noopener noreferrer">View live site</a>
-                    </div>
-                  </div>
-                </div>
-                <!-- Project 3 Card -->
-                <div class="col">
-                  <div class="card">
-                    <a href="https://majestic-selkie-439088.netlify.app/" target="_blank" rel="noopener noreferrer">
-                      <div class="project-image-container"><img src="images/cards/geolocalización.png"
-                          class="card-img-top" alt="IP Geolocation — view live app"></div>
-                    </a>
-                    <div class="card-body">
-                      <h3 class="card-title h5">Geolocalizador IP</h3>
-                      <p class="card-text">This app fetches geolocation information based on an IP address input by the
-                        user. It utilizes the RapidAPI service to retrieve JSON-formatted data including details such as
-                        country, city, region, and coordinates. The interface updates dynamically upon submission,
-                        displaying the fetched data in a structured format.</p>
-                      <a href="https://github.com/adaviladev/pf-API-data-show" target="_blank" rel="noopener noreferrer">GitHub repository</a>
-                      <a href="https://majestic-selkie-439088.netlify.app/" target="_blank" rel="noopener noreferrer">View live site</a>
-                    </div>
-                  </div>
-                </div>
-                <!-- Project 4 Card -->
-                <div class="col">
-                  <div class="card">
-                    <a href="https://codepen.io/adaviladev/full/KKLZOmP" target="_blank" rel="noopener noreferrer">
-                      <div class="project-image-container"><img src="images/cards/previsualizadormarkdown.png"
-                          class="card-img-top" alt="Markdown to HTML Converter — view live app"></div>
-                    </a>
-                    <div class="card-body">
-                      <h3 class="card-title h5">Markdown to HTML Converter</h3>
-                      <p class="card-text">This app is a Markdown editor built using React and Redux. It allows users to
-                        input Markdown text in a textarea, which is then parsed into HTML using the `marked` library and
-                        displayed in real-time in a preview pane. The application uses Redux for
-                        state management, with actions to update the Markdown content and a connected component to
-                        manage the editor's state.</p>
-                      <a href="https://codepen.io/adaviladev/pen/KKLZOmP" target="_blank" rel="noopener noreferrer">Source on CodePen</a>
-                      <a href="https://codepen.io/adaviladev/full/KKLZOmP" target="_blank" rel="noopener noreferrer">View live site</a>
-                    </div>
-                  </div>
-                </div>
-                <!-- Project 5 Card -->
-                <div class="col">
-                  <div class="card">
-                    <a href="https://adaviladevs-pokemonsearch.netlify.app/" target="_blank" rel="noopener noreferrer">
-                      <div class="project-image-container"><img src="images/cards/pokemonapp.png" class="card-img-top"
-                          alt="Pokémon Search App — view live app"></div>
-                    </a>
-                    <div class="card-body">
-                      <h3 class="card-title h5">Pokémon Search App</h3>
-                      <p class="card-text">This app fetches and displays Pokémon information based on user input or a
-                        random selection. It features dynamic updates of Pokémon name, ID, weight, height, sprite, and
-                        various stats (HP, attack, defense, special attack, special defense, speed) fetched from the
-                        PokeAPI.</p>
-                      <a href="https://github.com/adaviladev/pf-pokemon-search-app" target="_blank" rel="noopener noreferrer">GitHub
-                        repository</a>
-                      <a href="https://adaviladevs-pokemonsearch.netlify.app/" target="_blank" rel="noopener noreferrer">View live site</a>
-                    </div>
-                  </div>
-                </div>
-                <!-- Project 6 Card -->
               </div>
-              <!-- End of Projects Wrapper -->
-            </div>
+            </article>
+            <article class="project-card" aria-labelledby="project-title-2">
+              <a class="project-preview" href="https://codepen.io/adaviladev/full/KKLZOmP" target="_blank" rel="noopener noreferrer" aria-label="View Markdown Editor live (opens in a new tab)">
+                <img src="images/cards/previsualizadormarkdown.png" alt="Markdown Editor interface" loading="lazy" width="800" height="500">
+              </a>
+              <div class="project-details">
+                <h3 id="project-title-2">Markdown Editor</h3>
+                <p>A Markdown editor with a live HTML preview. React and Redux keep the editor and preview in sync as you type.</p>
+                <ul class="project-tags" aria-label="Technologies and features"><li>React</li><li>Redux</li><li>Markdown</li></ul>
+                <div class="project-links">
+                  <a href="https://codepen.io/adaviladev/full/KKLZOmP" target="_blank" rel="noopener noreferrer" aria-label="View Markdown Editor live (opens in a new tab)">View project <span aria-hidden="true">↗</span></a>
+                  <a href="https://codepen.io/adaviladev/pen/KKLZOmP" target="_blank" rel="noopener noreferrer" aria-label="View Markdown Editor source code (opens in a new tab)">View code <span aria-hidden="true">↗</span></a>
+                </div>
+              </div>
+            </article>
+            <article class="project-card" aria-labelledby="project-title-3">
+              <a class="project-preview" href="https://adaviladevs-pokemonsearch.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="View Pokémon Search live (opens in a new tab)">
+                <img src="images/cards/pokemonapp.png" alt="Pokémon Search interface" loading="lazy" width="800" height="500">
+              </a>
+              <div class="project-details">
+                <h3 id="project-title-3">Pokémon Search</h3>
+                <p>Search for a Pokémon or discover one at random, then explore its stats and details fetched from PokéAPI.</p>
+                <ul class="project-tags" aria-label="Technologies and features"><li>API integration</li><li>PokéAPI</li></ul>
+                <div class="project-links">
+                  <a href="https://adaviladevs-pokemonsearch.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="View Pokémon Search live (opens in a new tab)">View project <span aria-hidden="true">↗</span></a>
+                  <a href="https://github.com/adaviladev/pf-pokemon-search-app" target="_blank" rel="noopener noreferrer" aria-label="View Pokémon Search source code (opens in a new tab)">View code <span aria-hidden="true">↗</span></a>
+                </div>
+              </div>
+            </article>
+            <article class="project-card" aria-labelledby="project-title-4">
+              <a class="project-preview" href="https://codepen.io/adaviladev/full/abgzKbG" target="_blank" rel="noopener noreferrer" aria-label="View Todo List live (opens in a new tab)">
+                <img src="images/cards/Todo.png" alt="Todo List interface" loading="lazy" width="800" height="500">
+              </a>
+              <div class="project-details">
+                <h3 id="project-title-4">Todo List</h3>
+                <p>Add, edit and complete tasks, with local storage keeping your list available between visits.</p>
+                <ul class="project-tags" aria-label="Technologies and features"><li>Local storage</li><li>Task management</li></ul>
+                <div class="project-links">
+                  <a href="https://codepen.io/adaviladev/full/abgzKbG" target="_blank" rel="noopener noreferrer" aria-label="View Todo List live (opens in a new tab)">View project <span aria-hidden="true">↗</span></a>
+                  <a href="https://github.com/adaviladev/pf-task-manager" target="_blank" rel="noopener noreferrer" aria-label="View Todo List source code (opens in a new tab)">View code <span aria-hidden="true">↗</span></a>
+                </div>
+              </div>
+            </article>
+            <article class="project-card" aria-labelledby="project-title-5">
+              <a class="project-preview" href="https://majestic-selkie-439088.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="View IP Geolocation live (opens in a new tab)">
+                <img src="images/cards/geolocalización.png" alt="IP Geolocation interface" loading="lazy" width="800" height="500">
+              </a>
+              <div class="project-details">
+                <h3 id="project-title-5">IP Geolocation</h3>
+                <p>Look up an IP address to see its country, city and coordinates, with location data retrieved through RapidAPI.</p>
+                <ul class="project-tags" aria-label="Technologies and features"><li>API integration</li><li>RapidAPI</li></ul>
+                <div class="project-links">
+                  <a href="https://majestic-selkie-439088.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="View IP Geolocation live (opens in a new tab)">View project <span aria-hidden="true">↗</span></a>
+                  <a href="https://github.com/adaviladev/pf-API-data-show" target="_blank" rel="noopener noreferrer" aria-label="View IP Geolocation source code (opens in a new tab)">View code <span aria-hidden="true">↗</span></a>
+                </div>
+              </div>
+            </article>
           </div>
-        </div>
+        </section>
         <div class="accordion-item bg-transparent contact">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed bg-transparent  d-block text-center fs-4 mb-2"
