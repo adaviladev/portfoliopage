@@ -205,12 +205,6 @@ main.hero {
   color: #ece2bd;
 }
 
-.tech-icons {
-  font-size: clamp(18px, min(4vw, 2em), 2em);
-  padding-left: 10px;
-  color: #ece2bd;
-  margin-left: 5px !important;
-}
 
 .fa-brands {
   font-size: clamp(18px, min(4vw, 2em), 2em);
@@ -353,21 +347,7 @@ i:hover {
     max-width: 100%;
   }
 
-  .tech-icons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    width: 100%;
-    min-width: 0;
-    padding-left: 0;
-    margin-left: 0 !important;
-  }
 
-  .tech-icons > i {
-    font-size: 1.75rem;
-  }
 }
 
 @media (min-width: 600px) {
@@ -579,10 +559,6 @@ button {
     width: 100%;
   }
 
-  .tech-icons {
-    padding-left: 0;
-    margin-left: 0 !important;
-  }
 
   .contact-icons {
     justify-content: flex-start;
@@ -607,4 +583,60 @@ button {
     margin-left: 0 !important;
     margin-right: 0 !important;
   }
+}
+
+/* Visible technology names, grouped by their role. */
+.tech-stack-intro {
+  max-width: 42rem;
+  color: #c9c5b8;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+.tech-stack-groups {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem 2rem;
+}
+.tech-stack-group { min-width: 0; }
+.tech-stack-group h3 {
+  font-family: "Play", sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: .875rem;
+}
+.tech-stack-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .625rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.tech-stack-list li {
+  display: inline-flex;
+  align-items: center;
+  gap: .625rem;
+  max-width: 100%;
+  padding: .625rem .875rem;
+  border: 1px solid #514e43;
+  border-radius: 6px;
+  background: #111219;
+  color: #ece2bd;
+  font-size: 1rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+.tech-stack-list li > i {
+  flex: 0 0 1.5rem;
+  width: 1.5rem;
+  font-size: 1.25rem;
+  text-align: center;
+}
+.tech-stack-list li > i:hover {
+  transform: none;
+  color: inherit !important;
+}
+@media (max-width: 599.98px) {
+  .tech-stack-groups { grid-template-columns: minmax(0, 1fr); }
+  .tech-stack-group h3, .tech-stack-intro { text-align: center; }
+  .tech-stack-list { justify-content: center; }
 }
