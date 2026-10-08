@@ -136,17 +136,45 @@
           <header class="projects-intro">
             <p class="projects-eyebrow">SELECTED WORK</p>
             <h2 id="projects-heading">Projects</h2>
-            <p>From service websites to interactive apps: a selection of what I have built.</p>
+            <p>A selection of my web development work and interface design proposals.</p>
           </header>
           <div class="projects-grid">
+            <article class="project-card" aria-labelledby="project-title-vehicles">
+              <a class="project-preview" href="https://drivinapp.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="View Vehicle Management System live (opens in a new tab)">
+                <img src="images/cards/vehicle-management.png" alt="Vehicle management interface with a search button and vehicle table" loading="lazy" width="1637" height="928">
+              </a>
+              <div class="project-details">
+                <h3 id="project-title-vehicles">Vehicle Management System</h3>
+                <p>An API-powered vehicle management interface with a sortable, paginated table, filters and a map showing vehicle locations.</p>
+                <ul class="project-tags" aria-label="Technologies and features"><li>JavaScript</li><li>HTML</li><li>CSS</li><li>DataTables</li><li>API integration</li></ul>
+                <div class="project-links">
+                  <a href="https://drivinapp.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="View Vehicle Management System live (opens in a new tab)">View project <span aria-hidden="true">↗</span></a>
+                  <a href="https://github.com/adaviladev/pos-drivin" target="_blank" rel="noopener noreferrer" aria-label="View Vehicle Management System source code (opens in a new tab)">View code <span aria-hidden="true">↗</span></a>
+                </div>
+              </div>
+            </article>
+            <article class="project-card" aria-labelledby="project-title-boss-machine">
+              <div class="project-placeholder project-placeholder-api" aria-hidden="true">
+                <i class="fa-solid fa-server"></i>
+                <span>REST API</span>
+              </div>
+              <div class="project-details">
+                <h3 id="project-title-boss-machine">Boss Machine REST API</h3>
+                <p>A REST API built with Node.js and Express, with CRUD routes, custom middleware, validation and HTTP error handling. Automated tests cover the API with Mocha and Supertest.</p>
+                <ul class="project-tags" aria-label="Technologies and features"><li>Node.js</li><li>Express</li><li>Mocha</li><li>Supertest</li></ul>
+                <div class="project-links">
+                  <a href="https://github.com/adaviladev/codecademy-boss-machine" target="_blank" rel="noopener noreferrer" aria-label="View Boss Machine REST API source code (opens in a new tab)">View code <span aria-hidden="true">↗</span></a>
+                </div>
+              </div>
+            </article>
             <article class="project-card" aria-labelledby="project-title-1">
               <a class="project-preview" href="https://adaviladev.github.io/adavilatr/" target="_blank" rel="noopener noreferrer" aria-label="View Translator Website live (opens in a new tab)">
-                <img src="images/cards/translatorwebsite.png" alt="Translator Website interface" loading="lazy" width="800" height="500">
+                <img src="images/cards/TranslatorWebsite.png" alt="Translator Website interface" loading="lazy" width="800" height="500">
               </a>
               <div class="project-details">
                 <h3 id="project-title-1">Translator Website</h3>
                 <p>A website presenting translation services in four languages, with rotating testimonials and interactive blog navigation.</p>
-                <ul class="project-tags" aria-label="Technologies and features"><li>Service website</li><li>Interactive UI</li></ul>
+                <ul class="project-tags" aria-label="Technologies and features"><li>HTML</li><li>CSS</li><li>Bootstrap</li><li>JavaScript</li></ul>
                 <div class="project-links">
                   <a href="https://adaviladev.github.io/adavilatr/" target="_blank" rel="noopener noreferrer" aria-label="View Translator Website live (opens in a new tab)">View project <span aria-hidden="true">↗</span></a>
                   <a href="https://github.com/adaviladev/adavilatr" target="_blank" rel="noopener noreferrer" aria-label="View Translator Website source code (opens in a new tab)">View code <span aria-hidden="true">↗</span></a>
@@ -174,24 +202,25 @@
               <div class="project-details">
                 <h3 id="project-title-3">Pokémon Search</h3>
                 <p>Search for a Pokémon or discover one at random, then explore its stats and details fetched from PokéAPI.</p>
-                <ul class="project-tags" aria-label="Technologies and features"><li>API integration</li><li>PokéAPI</li></ul>
+                <ul class="project-tags" aria-label="Technologies and features"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>PokéAPI</li></ul>
                 <div class="project-links">
                   <a href="https://adaviladevs-pokemonsearch.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="View Pokémon Search live (opens in a new tab)">View project <span aria-hidden="true">↗</span></a>
                   <a href="https://github.com/adaviladev/pf-pokemon-search-app" target="_blank" rel="noopener noreferrer" aria-label="View Pokémon Search source code (opens in a new tab)">View code <span aria-hidden="true">↗</span></a>
                 </div>
               </div>
             </article>
-            <article class="project-card" aria-labelledby="project-title-4">
-              <a class="project-preview" href="https://codepen.io/adaviladev/full/abgzKbG" target="_blank" rel="noopener noreferrer" aria-label="View Todo List live (opens in a new tab)">
-                <img src="images/cards/Todo.png" alt="Todo List interface" loading="lazy" width="800" height="500">
-              </a>
+            <article class="project-card" aria-labelledby="project-title-task-manager">
+              <div class="project-placeholder project-placeholder-tasks" aria-hidden="true">
+                <i class="fa-solid fa-list-check"></i>
+                <span>Task management</span>
+              </div>
               <div class="project-details">
-                <h3 id="project-title-4">Todo List</h3>
-                <p>Add, edit and complete tasks, with local storage keeping your list available between visits.</p>
-                <ul class="project-tags" aria-label="Technologies and features"><li>Local storage</li><li>Task management</li></ul>
+                <h3 id="project-title-task-manager">Task Manager</h3>
+                <p>A task scheduling application that saves tasks locally so they remain available between visits.</p>
+                <ul class="project-tags" aria-label="Technologies and features"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Local storage</li></ul>
                 <div class="project-links">
-                  <a href="https://codepen.io/adaviladev/full/abgzKbG" target="_blank" rel="noopener noreferrer" aria-label="View Todo List live (opens in a new tab)">View project <span aria-hidden="true">↗</span></a>
-                  <a href="https://github.com/adaviladev/pf-task-manager" target="_blank" rel="noopener noreferrer" aria-label="View Todo List source code (opens in a new tab)">View code <span aria-hidden="true">↗</span></a>
+                  <a href="https://codepen.io/adaviladev/full/NWZWrQQ" target="_blank" rel="noopener noreferrer" aria-label="View Task Manager live (opens in a new tab)">View project <span aria-hidden="true">↗</span></a>
+                  <a href="https://codepen.io/adaviladev/pen/NWZWrQQ" target="_blank" rel="noopener noreferrer" aria-label="View Task Manager source code (opens in a new tab)">View code <span aria-hidden="true">↗</span></a>
                 </div>
               </div>
             </article>
@@ -207,6 +236,33 @@
                   <a href="https://majestic-selkie-439088.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="View IP Geolocation live (opens in a new tab)">View project <span aria-hidden="true">↗</span></a>
                   <a href="https://github.com/adaviladev/pf-API-data-show" target="_blank" rel="noopener noreferrer" aria-label="View IP Geolocation source code (opens in a new tab)">View code <span aria-hidden="true">↗</span></a>
                 </div>
+              </div>
+            </article>
+            <article class="project-card" aria-labelledby="project-title-role-playing-game">
+              <div class="project-placeholder project-placeholder-game" aria-hidden="true">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>Text-based RPG</span>
+              </div>
+              <div class="project-details">
+                <h3 id="project-title-role-playing-game">Role Playing Game</h3>
+                <p>A text-based role-playing game with combat mechanics, inventory management and random events.</p>
+                <ul class="project-tags" aria-label="Technologies and features"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+                <div class="project-links">
+                  <a href="https://shorturl.at/sn9n2" target="_blank" rel="noopener noreferrer" aria-label="View Role Playing Game live (opens in a new tab)">View project <span aria-hidden="true">↗</span></a>
+                </div>
+              </div>
+            </article>
+            <article class="project-card project-card-concept" aria-labelledby="project-title-clinic">
+              <div class="project-placeholder project-placeholder-design" aria-hidden="true">
+                <i class="fa-solid fa-pen-ruler"></i>
+                <span>Concept &amp; wireframes</span>
+              </div>
+              <div class="project-details">
+                <p class="project-status">Proposal &amp; design</p>
+                <h3 id="project-title-clinic">Clinic App — Concept &amp; Wireframes</h3>
+                <p>Collaborated with a team to shape a proposed clinic application, contributing to discussions about the solution structure and frontend approach.</p>
+                <p>Created and presented Figma wireframes covering multiple screens and data visualizations. The project is at the proposal stage; development has not started.</p>
+                <ul class="project-tags" aria-label="Tools and contributions"><li>Figma</li><li>Wireframing</li><li>Solution planning</li><li>Team collaboration</li></ul>
               </div>
             </article>
           </div>

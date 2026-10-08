@@ -511,7 +511,7 @@ button {
 .project-preview { display: block; border-radius: 11px 11px 0 0; overflow: hidden; background: #1b1c24; }
 .project-preview img { display: block; width: 100%; height: auto; aspect-ratio: 8 / 5; object-fit: contain; }
 .project-details { display: flex; flex-direction: column; flex: 1; padding: 1.5rem; }
-.project-details h3 { font-family: "Play", sans-serif; font-size: 1.4rem; margin-bottom: .75rem; }
+.project-details h3 { font-family: "Play", sans-serif; font-size: 1.4rem; color: #f5f1e8; margin-bottom: .75rem; }
 .project-details > p { color: #c9c5b8; line-height: 1.65; margin-bottom: 1.25rem; }
 .project-tags { display: flex; flex-wrap: wrap; gap: .5rem; list-style: none; padding: 0; margin: auto 0 1.5rem; }
 .project-tags li { color: #ece2bd; background: #252630; border-radius: 4px; padding: .3rem .6rem; font-size: .8rem; }
@@ -646,3 +646,51 @@ button {
 .about-me > p:last-child {
   margin-bottom: 0;
 }
+
+
+.project-details > .project-status {
+  color: #ece2bd;
+  font-size: .8rem;
+  font-weight: 700;
+  margin-bottom: .75rem;
+}
+
+.project-card-concept .project-tags {
+  margin: 0;
+}
+
+
+/* Decorative covers for projects that do not have a screenshot yet. */
+.project-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  aspect-ratio: 8 / 5;
+  flex-shrink: 0;
+  padding: 1.5rem;
+  border-radius: 11px 11px 0 0;
+  color: #f5f1e8;
+  text-align: center;
+}
+
+.project-placeholder > i {
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.project-placeholder > i:hover {
+  transform: none;
+  color: inherit !important;
+}
+
+.project-placeholder > span {
+  font-family: "Play", sans-serif;
+  font-size: 1rem;
+  letter-spacing: .04em;
+}
+
+.project-placeholder-api { background: #203647; }
+.project-placeholder-tasks { background: #253d37; }
+.project-placeholder-game { background: #36304a; }
+.project-placeholder-design { background: #44382d; }
