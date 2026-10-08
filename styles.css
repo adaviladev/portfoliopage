@@ -173,7 +173,7 @@ html {
   background-color: #0b0a09;
 }
 
-section.hero {
+main.hero {
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -244,9 +244,10 @@ section.hero {
   /* Cambia el valor según lo que necesites */
 }
 
-:focus {
-  outline: 0 !important;
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+:focus-visible {
+  outline: 3px solid #ffffff !important;
+  outline-offset: 4px;
+  box-shadow: 0 0 0 6px #010208 !important;
 }
 
 i:hover {
@@ -339,6 +340,36 @@ i:hover {
 }
 
 
+/* Center accordion menu buttons on mobile. */
+@media (max-width: 599.98px) {
+  .accordion-header {
+    display: flex;
+    justify-content: center;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .accordion-header .accordion-button {
+    max-width: 100%;
+  }
+
+  .tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    min-width: 0;
+    padding-left: 0;
+    margin-left: 0 !important;
+  }
+
+  .tech-icons > i {
+    font-size: 1.75rem;
+  }
+}
+
 @media (min-width: 600px) {
   .main-container {
     display: flex;
@@ -378,7 +409,7 @@ i:hover {
     color: #ece2bd;
   }
 
-  .name-title-container > h2 {
+  .name-title-container > .professional-title {
     color: #dd3028;
   }
 
@@ -431,7 +462,7 @@ i:hover {
   color: #ece2bd;
 }
 
-.name-title-container > h2 {
+.name-title-container > .professional-title {
   color: #dd3028;
 }
 
@@ -446,4 +477,44 @@ button {
   border: 1px solid rgb(106, 103, 103) !important;
   height: 550px !important;
   border-radius: 0 !important;
+}
+
+/* Accessible navigation and motion preferences */
+.skip-link {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1100;
+  padding: 0.75rem 1rem;
+  background: #010208;
+  color: #ffffff;
+  transform: translateY(-200%);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.professional-title {
+  font-family: "Play", sans-serif;
+  font-size: calc(1.325rem + 0.9vw);
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 1200px) {
+  .professional-title {
+    font-size: 2rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card-img-top, .collapsing, .accordion-button::after {
+    transition: none;
+  }
+
+  .project-image-container:hover .card-img-top, i:hover {
+    transform: none;
+  }
 }
