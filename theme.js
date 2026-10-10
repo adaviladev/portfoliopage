@@ -1,7 +1,7 @@
 (() => {
   const storageKey = 'portfolio-theme';
   const root = document.documentElement;
-  let theme = 'light';
+  let theme = 'dark';
 
   try {
     const savedTheme = localStorage.getItem(storageKey);
