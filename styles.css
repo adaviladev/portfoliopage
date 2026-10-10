@@ -709,14 +709,13 @@ button {
 .contact-intro { max-width: 55ch; color: #c9c5b8; line-height: 1.7; }
 .contact-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem 1.5rem; margin: 1.5rem 0 1rem; }
 .contact-actions a { display: inline-flex; align-items: center; gap: .625rem; min-height: 44px; color: #ece2bd; text-underline-offset: .25em; }
-.contact-actions .contact-primary { padding: .75rem 1.125rem; background: #ece2bd; color: #111219; border-radius: 6px; font-weight: 600; text-decoration: none; }
+.contact-actions .contact-primary { padding: .75rem 1.125rem; background: #ece2bd; color: #111219; border-radius: 0; font-weight: 600; text-decoration: none; }
 .contact-actions .contact-primary:hover { background: #ffffff; }
 .contact-actions i { font-size: 1.25rem; }
 .contact-actions i:hover { transform: none; color: inherit !important; }
 .contact-email, .contact-phone { overflow-wrap: anywhere; line-height: 1.7; }
 .portfolio-contact .contact-email a, .portfolio-contact .contact-phone a { color: #ece2bd; text-underline-offset: .25em; }
 .contact-phone { color: #c9c5b8; font-size: .9rem; margin-bottom: 0; }
-.name-title-container .hero-contact-link { display: inline-flex; align-items: center; align-self: flex-start; gap: .625rem; min-height: 44px; margin-top: .75rem; color: #ece2bd; text-underline-offset: .25em; }
 @media (min-width: 600px) {
   .portfolio-contact { width: 100%; }
 }
@@ -735,7 +734,7 @@ button {
   padding: .625rem 1rem;
   margin-top: 2rem;
   border: 1px solid #c4b895;
-  border-radius: 6px;
+  border-radius: 0;
   color: #ece2bd;
   text-decoration: none;
 }
@@ -785,4 +784,51 @@ button {
 
 .accordion-button[aria-expanded="true"] .disclosure-minus {
   display: inline;
+}
+
+/* Intro hierarchy uses the existing font sizes and colors. */
+.hero-headline {
+  margin-top: 1.25rem;
+  margin-bottom: .75rem;
+  max-width: 55ch;
+}
+
+.hero-technologies {
+  margin-bottom: 1.25rem;
+  max-width: 55ch;
+}
+
+/* Presentation spacing based on the reference; typography stays unchanged. */
+.main-container > .name-title-container {
+  margin-top: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+.name-title-container > .professional-title {
+  margin-bottom: 1rem;
+}
+.name-title-container > h1 {
+  margin-bottom: 0;
+}
+.name-title-container > .hero-headline {
+  margin-top: 2.5rem;
+  margin-bottom: .75rem;
+}
+.name-title-container > .hero-technologies {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.name-title-container > div {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+.name-title-container > div > a > i {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Desktop top breathing room stays within the horizontal page inset. */
+@media (min-width: 600px) {
+  .main-container > .name-title-container {
+    margin-top: 2rem;
+  }
 }
