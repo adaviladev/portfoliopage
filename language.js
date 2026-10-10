@@ -74,10 +74,11 @@
   } catch { /* Language switching also works without storage. */ }
 
   const translate = (text) => {
-    if (Object.hasOwn(translations, text)) return translations[text];
-    const profile = text.match(/^(GitHub|LinkedIn|Instagram) profile \(opens in a new tab\)$/);
+    const normalized = text.replace(/\s+/g, ' ').trim();
+    if (Object.hasOwn(translations, normalized)) return translations[normalized];
+    const profile = normalized.match(/^(GitHub|LinkedIn|Instagram) profile \(opens in a new tab\)$/);
     if (profile) return 'Perfil de ' + profile[1] + ' (se abre en una pestaña nueva)';
-    const project = text.match(/^View (.+) (live|source code) \(opens in a new tab\)$/);
+    const project = normalized.match(/^View (.+) (live|source code) \(opens in a new tab\)$/);
     if (project) return (project[2] === 'live' ? 'Ver proyecto: ' : 'Ver código de ') + (translations[project[1]] || project[1]) + ' (se abre en una pestaña nueva)';
     return text;
   };
