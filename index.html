@@ -1,41 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adaviladev's Portfolio Page</title>
+    <script src="theme.js"></script>
+    <script src="language.js" defer></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Adaviladev's Portfolio Page</title>
-  <script src="theme.js"></script>
-  <script src="language.js" defer></script>
-  <!-- Styles -->
-  <link rel="stylesheet" href="styles.css">
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet">
+    <!-- Icons -->
+    <script
+      src="https://kit.fontawesome.com/877d51e80c.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
 
-  <!-- Icons -->
-  <script src="https://kit.fontawesome.com/877d51e80c.js" crossorigin="anonymous"></script>
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-
-</head>
-
-<body>
-  <!-- Hero Section -->
-  <a class="skip-link" href="#main-content">Skip to main content</a>
-  <main class="hero" id="main-content" tabindex="-1">
-    <!-- <div style="height: 175px;" class="social position-absolute top-0 text-light pt-2">Social
+  <body>
+    <!-- Hero Section -->
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <main class="hero" id="main-content" tabindex="-1">
+      <!-- <div style="height: 175px;" class="social position-absolute top-0 text-light pt-2">Social
       <a class="text-decoration-none text-reset" href="https://github.com/adaviladev" aria-label="GitHub profile (opens in a new tab)" target="_blank" rel="noopener noreferrer">
         <i class="fa-brands fa-github m-2" aria-hidden="true"></i>
       </a>
@@ -47,256 +56,750 @@
       </a>
 
     </div> -->
-    <div class="main-container m-4 p-2">
-      <div class="theme-controls" hidden>
-        <button class="language-toggle" type="button" aria-label="English. Switch to Spanish" hidden>English</button>
-        <button class="theme-toggle" type="button" aria-label="Light mode. Switch to dark mode"><span class="theme-icon" aria-hidden="true">☀</span><span class="theme-label">Light mode</span></button>
-      </div>
-      <div class="name-title-container play-regular">
-        <p class="professional-title">Frontend Developer · Chile</p>
-        <h1 id="top" tabindex="-1">Álvaro Dávila</h1>
-        <p class="hero-headline play-regular">Turning ideas into thoughtful, easy-to-use interfaces through frontend development and problem solving.</p>
-        <p class="hero-technologies">JavaScript · React · Node.js · REST APIs</p>
-        <div class="hero-social-links">
-          <a class="text-decoration-none text-reset" href="https://github.com/adaviladev" aria-label="GitHub profile (opens in a new tab)" target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-github m-3" aria-hidden="true"></i>
-          </a>
-          <a class="text-decoration-none text-reset" href="https://www.linkedin.com/in/alvarodavilapinto/" aria-label="LinkedIn profile (opens in a new tab)" target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-linkedin m-3" aria-hidden="true"></i>
-          </a>
-          <a class="text-decoration-none text-reset" href="https://www.instagram.com/alvarodavila87/" aria-label="Instagram profile (opens in a new tab)" target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-instagram m-3" aria-hidden="true"></i>
-          </a>
+      <div class="main-container m-4 p-2">
+        <div class="theme-controls" hidden>
+          <button
+            class="language-toggle"
+            type="button"
+            aria-label="English. Switch to Spanish"
+            hidden
+          >
+            English
+          </button>
+          <button
+            class="theme-toggle"
+            type="button"
+            aria-label="Light mode. Switch to dark mode"
+          >
+            <span class="theme-icon" aria-hidden="true">☀</span
+            ><span class="theme-label">Light mode</span>
+          </button>
         </div>
-      </div>
-      <div class="accordion-flush" id="accordionFlushExample">
-        <div class="accordion-item bg-transparent projects-menu">
-          <h2 class="accordion-header">
-            <button class="accordion-button d-block text-center fs-4" id="projects-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#projects" aria-expanded="true" aria-controls="projects">Projects<span class="disclosure-sign" aria-hidden="true"><span class="disclosure-plus">+</span><span class="disclosure-minus">−</span></span></button>
-          </h2>
-          <div class="accordion-collapse collapse show" id="projects" data-bs-parent="#accordionFlushExample" role="region" aria-labelledby="projects-toggle">
-            <div class="portfolio-projects">
-          <header class="projects-intro">
-            <p class="projects-eyebrow">SELECTED WORK</p>
-            <p>A selection of my web development work and interface design proposals.</p>
-          </header>
-          <div class="projects-grid">
-            <article class="project-card" aria-labelledby="project-title-vehicles">
-              <a class="project-preview" href="https://drivinapp.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="View Vehicle Management System live (opens in a new tab)">
-                <img src="images/cards/vehicle-management.png" alt="Vehicle management interface with a search button and vehicle table" loading="lazy" width="1637" height="928">
-              </a>
-              <div class="project-details">
-                <h3 id="project-title-vehicles">Vehicle Management System</h3>
-                <p>An API-powered vehicle management interface with a sortable, paginated table, filters and a map showing vehicle locations.</p>
-                <ul class="project-tags" aria-label="Technologies and features"><li>JavaScript</li><li>HTML</li><li>CSS</li><li>DataTables</li><li>API integration</li></ul>
-                <div class="project-links">
-                  <a href="https://drivinapp.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="View Vehicle Management System live (opens in a new tab)">View project <span aria-hidden="true">↗</span></a>
-                  <a href="https://github.com/adaviladev/pos-drivin" target="_blank" rel="noopener noreferrer" aria-label="View Vehicle Management System source code (opens in a new tab)">View code <span aria-hidden="true">↗</span></a>
-                </div>
-              </div>
-            </article>
-            <article class="project-card" aria-labelledby="project-title-boss-machine">
-              <div class="project-placeholder project-placeholder-api" aria-hidden="true">
-                <i class="fa-solid fa-server"></i>
-                <span>REST API</span>
-              </div>
-              <div class="project-details">
-                <h3 id="project-title-boss-machine">Boss Machine REST API</h3>
-                <p>A REST API built with Node.js and Express, with CRUD routes, custom middleware, validation and HTTP error handling. Automated tests cover the API with Mocha and Supertest.</p>
-                <ul class="project-tags" aria-label="Technologies and features"><li>Node.js</li><li>Express</li><li>Mocha</li><li>Supertest</li></ul>
-                <div class="project-links">
-                  <a href="https://github.com/adaviladev/codecademy-boss-machine" target="_blank" rel="noopener noreferrer" aria-label="View Boss Machine REST API source code (opens in a new tab)">View code <span aria-hidden="true">↗</span></a>
-                </div>
-              </div>
-            </article>
-            <article class="project-card" aria-labelledby="project-title-1">
-              <a class="project-preview" href="https://adaviladev.github.io/adavilatr/" target="_blank" rel="noopener noreferrer" aria-label="View Translator Website live (opens in a new tab)">
-                <img src="images/cards/TranslatorWebsite.png" alt="Translator Website interface" loading="lazy" width="800" height="500">
-              </a>
-              <div class="project-details">
-                <h3 id="project-title-1">Translator Website</h3>
-                <p>A website presenting translation services in four languages, with rotating testimonials and interactive blog navigation.</p>
-                <ul class="project-tags" aria-label="Technologies and features"><li>HTML</li><li>CSS</li><li>Bootstrap</li><li>JavaScript</li></ul>
-                <div class="project-links">
-                  <a href="https://adaviladev.github.io/adavilatr/" target="_blank" rel="noopener noreferrer" aria-label="View Translator Website live (opens in a new tab)">View project <span aria-hidden="true">↗</span></a>
-                  <a href="https://github.com/adaviladev/adavilatr" target="_blank" rel="noopener noreferrer" aria-label="View Translator Website source code (opens in a new tab)">View code <span aria-hidden="true">↗</span></a>
-                </div>
-              </div>
-            </article>
-            <article class="project-card" aria-labelledby="project-title-2">
-              <a class="project-preview" href="https://codepen.io/adaviladev/full/KKLZOmP" target="_blank" rel="noopener noreferrer" aria-label="View Markdown Editor live (opens in a new tab)">
-                <img src="images/cards/previsualizadormarkdown.png" alt="Markdown Editor interface" loading="lazy" width="800" height="500">
-              </a>
-              <div class="project-details">
-                <h3 id="project-title-2">Markdown Editor</h3>
-                <p>A Markdown editor with a live HTML preview. React and Redux keep the editor and preview in sync as you type.</p>
-                <ul class="project-tags" aria-label="Technologies and features"><li>React</li><li>Redux</li><li>Markdown</li></ul>
-                <div class="project-links">
-                  <a href="https://codepen.io/adaviladev/full/KKLZOmP" target="_blank" rel="noopener noreferrer" aria-label="View Markdown Editor live (opens in a new tab)">View project <span aria-hidden="true">↗</span></a>
-                  <a href="https://codepen.io/adaviladev/pen/KKLZOmP" target="_blank" rel="noopener noreferrer" aria-label="View Markdown Editor source code (opens in a new tab)">View code <span aria-hidden="true">↗</span></a>
-                </div>
-              </div>
-            </article>
-            <article class="project-card" aria-labelledby="project-title-3">
-              <a class="project-preview" href="https://adaviladevs-pokemonsearch.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="View Pokémon Search live (opens in a new tab)">
-                <img src="images/cards/pokemonapp.png" alt="Pokémon Search interface" loading="lazy" width="800" height="500">
-              </a>
-              <div class="project-details">
-                <h3 id="project-title-3">Pokémon Search</h3>
-                <p>Search for a Pokémon or discover one at random, then explore its stats and details fetched from PokéAPI.</p>
-                <ul class="project-tags" aria-label="Technologies and features"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>PokéAPI</li></ul>
-                <div class="project-links">
-                  <a href="https://adaviladevs-pokemonsearch.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="View Pokémon Search live (opens in a new tab)">View project <span aria-hidden="true">↗</span></a>
-                  <a href="https://github.com/adaviladev/pf-pokemon-search-app" target="_blank" rel="noopener noreferrer" aria-label="View Pokémon Search source code (opens in a new tab)">View code <span aria-hidden="true">↗</span></a>
-                </div>
-              </div>
-            </article>
-            <article class="project-card" aria-labelledby="project-title-task-manager">
-              <div class="project-placeholder project-placeholder-tasks" aria-hidden="true">
-                <i class="fa-solid fa-list-check"></i>
-                <span>Task management</span>
-              </div>
-              <div class="project-details">
-                <h3 id="project-title-task-manager">Task Manager</h3>
-                <p>A task scheduling application that saves tasks locally so they remain available between visits.</p>
-                <ul class="project-tags" aria-label="Technologies and features"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Local storage</li></ul>
-                <div class="project-links">
-                  <a href="https://codepen.io/adaviladev/full/NWZWrQQ" target="_blank" rel="noopener noreferrer" aria-label="View Task Manager live (opens in a new tab)">View project <span aria-hidden="true">↗</span></a>
-                  <a href="https://codepen.io/adaviladev/pen/NWZWrQQ" target="_blank" rel="noopener noreferrer" aria-label="View Task Manager source code (opens in a new tab)">View code <span aria-hidden="true">↗</span></a>
-                </div>
-              </div>
-            </article>
-            <article class="project-card" aria-labelledby="project-title-5">
-              <a class="project-preview" href="https://majestic-selkie-439088.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="View IP Geolocation live (opens in a new tab)">
-                <img src="images/cards/geolocalización.png" alt="IP Geolocation interface" loading="lazy" width="800" height="500">
-              </a>
-              <div class="project-details">
-                <h3 id="project-title-5">IP Geolocation</h3>
-                <p>Look up an IP address to see its country, city and coordinates, with location data retrieved through RapidAPI.</p>
-                <ul class="project-tags" aria-label="Technologies and features"><li>API integration</li><li>RapidAPI</li></ul>
-                <div class="project-links">
-                  <a href="https://majestic-selkie-439088.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="View IP Geolocation live (opens in a new tab)">View project <span aria-hidden="true">↗</span></a>
-                  <a href="https://github.com/adaviladev/pf-API-data-show" target="_blank" rel="noopener noreferrer" aria-label="View IP Geolocation source code (opens in a new tab)">View code <span aria-hidden="true">↗</span></a>
-                </div>
-              </div>
-            </article>
-            <article class="project-card" aria-labelledby="project-title-role-playing-game">
-              <div class="project-placeholder project-placeholder-game" aria-hidden="true">
-                <i class="fa-solid fa-gamepad"></i>
-                <span>Text-based RPG</span>
-              </div>
-              <div class="project-details">
-                <h3 id="project-title-role-playing-game">Role Playing Game</h3>
-                <p>A text-based role-playing game with combat mechanics, inventory management and random events.</p>
-                <ul class="project-tags" aria-label="Technologies and features"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
-                <div class="project-links">
-                  <a href="https://shorturl.at/sn9n2" target="_blank" rel="noopener noreferrer" aria-label="View Role Playing Game live (opens in a new tab)">View project <span aria-hidden="true">↗</span></a>
-                </div>
-              </div>
-            </article>
-            <article class="project-card project-card-concept" aria-labelledby="project-title-clinic">
-              <div class="project-placeholder project-placeholder-design" aria-hidden="true">
-                <i class="fa-solid fa-pen-ruler"></i>
-                <span>Concept &amp; wireframes</span>
-              </div>
-              <div class="project-details">
-                <p class="project-status">Proposal &amp; design</p>
-                <h3 id="project-title-clinic">Clinic App — Concept &amp; Wireframes</h3>
-                <p>Collaborated with a team to shape a proposed clinic application, contributing to discussions about the solution structure and frontend approach.</p>
-                <p>Created and presented Figma wireframes covering multiple screens and data visualizations. The project is at the proposal stage; development has not started.</p>
-                <ul class="project-tags" aria-label="Tools and contributions"><li>Figma</li><li>Wireframing</li><li>Solution planning</li><li>Team collaboration</li></ul>
-              </div>
-            </article>
+        <div class="name-title-container play-regular">
+          <h1 id="top" tabindex="-1">Álvaro Dávila</h1>
+          <p class="professional-title">Frontend Developer · Chile</p>
+          <p class="hero-headline play-regular">
+            Turning ideas into thoughtful, easy-to-use interfaces through
+            frontend development and problem solving.
+          </p>
+          <p class="hero-technologies">
+            JavaScript · React · Node.js · REST APIs
+          </p>
+          <div class="hero-social-links">
+            <a
+              class="text-decoration-none text-reset"
+              href="https://github.com/adaviladev"
+              aria-label="GitHub profile (opens in a new tab)"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-github m-3" aria-hidden="true"></i>
+            </a>
+            <a
+              class="text-decoration-none text-reset"
+              href="https://www.linkedin.com/in/alvarodavilapinto/"
+              aria-label="LinkedIn profile (opens in a new tab)"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-linkedin m-3" aria-hidden="true"></i>
+            </a>
+            <a
+              class="text-decoration-none text-reset"
+              href="https://www.instagram.com/alvarodavila87/"
+              aria-label="Instagram profile (opens in a new tab)"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-instagram m-3" aria-hidden="true"></i>
+            </a>
           </div>
         </div>
-          </div>
-        </div>
-        <div class="accordion-item bg-transparent about">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed  d-block text-center fs-4" type="button"
-              data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
-              aria-controls="flush-collapseOne">About<span class="disclosure-sign" aria-hidden="true"><span class="disclosure-plus">+</span><span class="disclosure-minus">−</span></span></button>
-          </h2>
-          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body about-me  p-2">
-              <p>I'm Álvaro, a <strong>frontend developer</strong> working with JavaScript and React. I enjoy <strong>problem solving</strong> and turning ideas into clear, easy-to-use interfaces. I'm also building my skills in Node.js, Express and automated testing.</p>
-
-              <p>My experience in translation and localization has taught me to pay attention to detail, communicate clearly and consider the people I'm creating something for.</p>
-
-              <p>I'd like to bring that mix of technical skills and experience to a frontend team, building useful applications and learning from the people I work with.</p>
+        <div class="accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item bg-transparent projects-menu">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button d-block text-center fs-4"
+                id="projects-toggle"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#projects"
+                aria-expanded="true"
+                aria-controls="projects"
+              >
+                Projects<span class="disclosure-sign" aria-hidden="true"
+                  ><span class="disclosure-plus">+</span
+                  ><span class="disclosure-minus">−</span></span
+                >
+              </button>
+            </h2>
+            <div
+              class="accordion-collapse collapse show"
+              id="projects"
+              data-bs-parent="#accordionFlushExample"
+              role="region"
+              aria-labelledby="projects-toggle"
+            >
+              <div class="portfolio-projects">
+                <header class="projects-intro">
+                  <p class="projects-eyebrow">SELECTED WORK</p>
+                  <p>
+                    A selection of my web development work and interface design
+                    proposals.
+                  </p>
+                </header>
+                <div class="projects-grid">
+                  <article
+                    class="project-card"
+                    aria-labelledby="project-title-vehicles"
+                  >
+                    <a
+                      class="project-preview"
+                      href="https://drivinapp.netlify.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="View Vehicle Management System live (opens in a new tab)"
+                    >
+                      <img
+                        src="images/cards/vehicle-management.png"
+                        alt="Vehicle management interface with a search button and vehicle table"
+                        loading="lazy"
+                        width="1637"
+                        height="928"
+                      />
+                    </a>
+                    <div class="project-details">
+                      <h3 id="project-title-vehicles">
+                        Vehicle Management System
+                      </h3>
+                      <p>
+                        An API-powered vehicle management interface with a
+                        sortable, paginated table, filters and a map showing
+                        vehicle locations.
+                      </p>
+                      <ul
+                        class="project-tags"
+                        aria-label="Technologies and features"
+                      >
+                        <li>JavaScript</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>DataTables</li>
+                        <li>API integration</li>
+                      </ul>
+                      <div class="project-links">
+                        <a
+                          href="https://drivinapp.netlify.app/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="View Vehicle Management System live (opens in a new tab)"
+                          >View project <span aria-hidden="true">↗</span></a
+                        >
+                        <a
+                          href="https://github.com/adaviladev/pos-drivin"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="View Vehicle Management System source code (opens in a new tab)"
+                          >View code <span aria-hidden="true">↗</span></a
+                        >
+                      </div>
+                    </div>
+                  </article>
+                  <article
+                    class="project-card"
+                    aria-labelledby="project-title-boss-machine"
+                  >
+                    <div
+                      class="project-placeholder project-placeholder-api"
+                      aria-hidden="true"
+                    >
+                      <i class="fa-solid fa-server"></i>
+                      <span>REST API</span>
+                    </div>
+                    <div class="project-details">
+                      <h3 id="project-title-boss-machine">
+                        Boss Machine REST API
+                      </h3>
+                      <p>
+                        A REST API built with Node.js and Express, with CRUD
+                        routes, custom middleware, validation and HTTP error
+                        handling. Automated tests cover the API with Mocha and
+                        Supertest.
+                      </p>
+                      <ul
+                        class="project-tags"
+                        aria-label="Technologies and features"
+                      >
+                        <li>Node.js</li>
+                        <li>Express</li>
+                        <li>Mocha</li>
+                        <li>Supertest</li>
+                      </ul>
+                      <div class="project-links">
+                        <a
+                          href="https://github.com/adaviladev/codecademy-boss-machine"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="View Boss Machine REST API source code (opens in a new tab)"
+                          >View code <span aria-hidden="true">↗</span></a
+                        >
+                      </div>
+                    </div>
+                  </article>
+                  <article
+                    class="project-card"
+                    aria-labelledby="project-title-1"
+                  >
+                    <a
+                      class="project-preview"
+                      href="https://adaviladev.github.io/adavilatr/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="View Translator Website live (opens in a new tab)"
+                    >
+                      <img
+                        src="images/cards/TranslatorWebsite.png"
+                        alt="Translator Website interface"
+                        loading="lazy"
+                        width="800"
+                        height="500"
+                      />
+                    </a>
+                    <div class="project-details">
+                      <h3 id="project-title-1">Translator Website</h3>
+                      <p>
+                        A website presenting translation services in four
+                        languages, with rotating testimonials and interactive
+                        blog navigation.
+                      </p>
+                      <ul
+                        class="project-tags"
+                        aria-label="Technologies and features"
+                      >
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Bootstrap</li>
+                        <li>JavaScript</li>
+                      </ul>
+                      <div class="project-links">
+                        <a
+                          href="https://adaviladev.github.io/adavilatr/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="View Translator Website live (opens in a new tab)"
+                          >View project <span aria-hidden="true">↗</span></a
+                        >
+                        <a
+                          href="https://github.com/adaviladev/adavilatr"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="View Translator Website source code (opens in a new tab)"
+                          >View code <span aria-hidden="true">↗</span></a
+                        >
+                      </div>
+                    </div>
+                  </article>
+                  <article
+                    class="project-card"
+                    aria-labelledby="project-title-2"
+                  >
+                    <a
+                      class="project-preview"
+                      href="https://codepen.io/adaviladev/full/KKLZOmP"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="View Markdown Editor live (opens in a new tab)"
+                    >
+                      <img
+                        src="images/cards/previsualizadormarkdown.png"
+                        alt="Markdown Editor interface"
+                        loading="lazy"
+                        width="800"
+                        height="500"
+                      />
+                    </a>
+                    <div class="project-details">
+                      <h3 id="project-title-2">Markdown Editor</h3>
+                      <p>
+                        A Markdown editor with a live HTML preview. React and
+                        Redux keep the editor and preview in sync as you type.
+                      </p>
+                      <ul
+                        class="project-tags"
+                        aria-label="Technologies and features"
+                      >
+                        <li>React</li>
+                        <li>Redux</li>
+                        <li>Markdown</li>
+                      </ul>
+                      <div class="project-links">
+                        <a
+                          href="https://codepen.io/adaviladev/full/KKLZOmP"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="View Markdown Editor live (opens in a new tab)"
+                          >View project <span aria-hidden="true">↗</span></a
+                        >
+                        <a
+                          href="https://codepen.io/adaviladev/pen/KKLZOmP"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="View Markdown Editor source code (opens in a new tab)"
+                          >View code <span aria-hidden="true">↗</span></a
+                        >
+                      </div>
+                    </div>
+                  </article>
+                  <article
+                    class="project-card"
+                    aria-labelledby="project-title-3"
+                  >
+                    <a
+                      class="project-preview"
+                      href="https://adaviladevs-pokemonsearch.netlify.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="View Pokémon Search live (opens in a new tab)"
+                    >
+                      <img
+                        src="images/cards/pokemonapp.png"
+                        alt="Pokémon Search interface"
+                        loading="lazy"
+                        width="800"
+                        height="500"
+                      />
+                    </a>
+                    <div class="project-details">
+                      <h3 id="project-title-3">Pokémon Search</h3>
+                      <p>
+                        Search for a Pokémon or discover one at random, then
+                        explore its stats and details fetched from PokéAPI.
+                      </p>
+                      <ul
+                        class="project-tags"
+                        aria-label="Technologies and features"
+                      >
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>PokéAPI</li>
+                      </ul>
+                      <div class="project-links">
+                        <a
+                          href="https://adaviladevs-pokemonsearch.netlify.app/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="View Pokémon Search live (opens in a new tab)"
+                          >View project <span aria-hidden="true">↗</span></a
+                        >
+                        <a
+                          href="https://github.com/adaviladev/pf-pokemon-search-app"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="View Pokémon Search source code (opens in a new tab)"
+                          >View code <span aria-hidden="true">↗</span></a
+                        >
+                      </div>
+                    </div>
+                  </article>
+                  <article
+                    class="project-card"
+                    aria-labelledby="project-title-task-manager"
+                  >
+                    <div
+                      class="project-placeholder project-placeholder-tasks"
+                      aria-hidden="true"
+                    >
+                      <i class="fa-solid fa-list-check"></i>
+                      <span>Task management</span>
+                    </div>
+                    <div class="project-details">
+                      <h3 id="project-title-task-manager">Task Manager</h3>
+                      <p>
+                        A task scheduling application that saves tasks locally
+                        so they remain available between visits.
+                      </p>
+                      <ul
+                        class="project-tags"
+                        aria-label="Technologies and features"
+                      >
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Local storage</li>
+                      </ul>
+                      <div class="project-links">
+                        <a
+                          href="https://codepen.io/adaviladev/full/NWZWrQQ"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="View Task Manager live (opens in a new tab)"
+                          >View project <span aria-hidden="true">↗</span></a
+                        >
+                        <a
+                          href="https://codepen.io/adaviladev/pen/NWZWrQQ"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="View Task Manager source code (opens in a new tab)"
+                          >View code <span aria-hidden="true">↗</span></a
+                        >
+                      </div>
+                    </div>
+                  </article>
+                  <article
+                    class="project-card"
+                    aria-labelledby="project-title-5"
+                  >
+                    <a
+                      class="project-preview"
+                      href="https://majestic-selkie-439088.netlify.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="View IP Geolocation live (opens in a new tab)"
+                    >
+                      <img
+                        src="images/cards/geolocalización.png"
+                        alt="IP Geolocation interface"
+                        loading="lazy"
+                        width="800"
+                        height="500"
+                      />
+                    </a>
+                    <div class="project-details">
+                      <h3 id="project-title-5">IP Geolocation</h3>
+                      <p>
+                        Look up an IP address to see its country, city and
+                        coordinates, with location data retrieved through
+                        RapidAPI.
+                      </p>
+                      <ul
+                        class="project-tags"
+                        aria-label="Technologies and features"
+                      >
+                        <li>API integration</li>
+                        <li>RapidAPI</li>
+                      </ul>
+                      <div class="project-links">
+                        <a
+                          href="https://majestic-selkie-439088.netlify.app/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="View IP Geolocation live (opens in a new tab)"
+                          >View project <span aria-hidden="true">↗</span></a
+                        >
+                        <a
+                          href="https://github.com/adaviladev/pf-API-data-show"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="View IP Geolocation source code (opens in a new tab)"
+                          >View code <span aria-hidden="true">↗</span></a
+                        >
+                      </div>
+                    </div>
+                  </article>
+                  <article
+                    class="project-card"
+                    aria-labelledby="project-title-role-playing-game"
+                  >
+                    <div
+                      class="project-placeholder project-placeholder-game"
+                      aria-hidden="true"
+                    >
+                      <i class="fa-solid fa-gamepad"></i>
+                      <span>Text-based RPG</span>
+                    </div>
+                    <div class="project-details">
+                      <h3 id="project-title-role-playing-game">
+                        Role Playing Game
+                      </h3>
+                      <p>
+                        A text-based role-playing game with combat mechanics,
+                        inventory management and random events.
+                      </p>
+                      <ul
+                        class="project-tags"
+                        aria-label="Technologies and features"
+                      >
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                      </ul>
+                      <div class="project-links">
+                        <a
+                          href="https://shorturl.at/sn9n2"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="View Role Playing Game live (opens in a new tab)"
+                          >View project <span aria-hidden="true">↗</span></a
+                        >
+                      </div>
+                    </div>
+                  </article>
+                  <article
+                    class="project-card project-card-concept"
+                    aria-labelledby="project-title-clinic"
+                  >
+                    <div
+                      class="project-placeholder project-placeholder-design"
+                      aria-hidden="true"
+                    >
+                      <i class="fa-solid fa-pen-ruler"></i>
+                      <span>Concept &amp; wireframes</span>
+                    </div>
+                    <div class="project-details">
+                      <p class="project-status">Proposal &amp; design</p>
+                      <h3 id="project-title-clinic">
+                        Clinic App — Concept &amp; Wireframes
+                      </h3>
+                      <p>
+                        Collaborated with a team to shape a proposed clinic
+                        application, contributing to discussions about the
+                        solution structure and frontend approach.
+                      </p>
+                      <p>
+                        Created and presented Figma wireframes covering multiple
+                        screens and data visualizations. The project is at the
+                        proposal stage; development has not started.
+                      </p>
+                      <ul
+                        class="project-tags"
+                        aria-label="Tools and contributions"
+                      >
+                        <li>Figma</li>
+                        <li>Wireframing</li>
+                        <li>Solution planning</li>
+                        <li>Team collaboration</li>
+                      </ul>
+                    </div>
+                  </article>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="accordion-item bg-transparent tech stack">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed  d-block text-center fs-4" type="button"
-              data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
-              aria-controls="flush-collapseTwo">Tech Stack<span class="disclosure-sign" aria-hidden="true"><span class="disclosure-plus">+</span><span class="disclosure-minus">−</span></span></button>
-          </h2>
-          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body tech-stack">
-              <p class="tech-stack-intro">My frontend toolkit, supported by backend fundamentals and automated testing.</p>
-              <div class="tech-stack-groups">
-                <section class="tech-stack-group" aria-labelledby="tech-group-1">
-                  <h3 id="tech-group-1">Frontend</h3>
-                  <ul class="tech-stack-list" role="list">
-                    <li><i class="fa-brands fa-html5" aria-hidden="true"></i><span>HTML5</span></li>
-                    <li><i class="fa-brands fa-css3-alt" aria-hidden="true"></i><span>CSS3</span></li>
-                    <li><i class="fa-brands fa-js" aria-hidden="true"></i><span>JavaScript</span></li>
-                    <li><i class="fa-brands fa-react" aria-hidden="true"></i><span>React</span></li>
-                    <li><i class="fa-solid fa-code" aria-hidden="true"></i><span>Next.js</span></li>
-                  </ul>
-                </section>
-                <section class="tech-stack-group" aria-labelledby="tech-group-2">
-                  <h3 id="tech-group-2">Styling</h3>
-                  <ul class="tech-stack-list" role="list">
-                    <li><i class="fa-solid fa-palette" aria-hidden="true"></i><span>Tailwind CSS</span></li>
-                    <li><i class="fa-brands fa-bootstrap" aria-hidden="true"></i><span>Bootstrap</span></li>
-                    <li><i class="fa-brands fa-sass" aria-hidden="true"></i><span>Sass</span></li>
-                  </ul>
-                </section>
-                <section class="tech-stack-group" aria-labelledby="tech-group-3">
-                  <h3 id="tech-group-3">Backend foundations</h3>
-                  <ul class="tech-stack-list" role="list">
-                    <li><i class="fa-brands fa-node-js" aria-hidden="true"></i><span>Node.js</span></li>
-                    <li><i class="fa-solid fa-server" aria-hidden="true"></i><span>Express</span></li>
-                    <li><i class="fa-solid fa-database" aria-hidden="true"></i><span>PostgreSQL</span></li>
-                  </ul>
-                </section>
-                <section class="tech-stack-group" aria-labelledby="tech-group-4">
-                  <h3 id="tech-group-4">Tools & testing</h3>
-                  <ul class="tech-stack-list" role="list">
-                    <li><i class="fa-brands fa-git-alt" aria-hidden="true"></i><span>Git</span></li>
-                    <li><i class="fa-brands fa-figma" aria-hidden="true"></i><span>Figma</span></li>
-                    <li><i class="fa-solid fa-bolt" aria-hidden="true"></i><span>Vite</span></li>
-                    <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Mocha</span></li>
-                    <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Supertest</span></li>
-                  </ul>
-                </section>
+          <div class="accordion-item bg-transparent about">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed d-block text-center fs-4"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                About<span class="disclosure-sign" aria-hidden="true"
+                  ><span class="disclosure-plus">+</span
+                  ><span class="disclosure-minus">−</span></span
+                >
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body about-me p-2">
+                <p>
+                  I'm Álvaro, a <strong>frontend developer</strong> working with
+                  JavaScript and React. I enjoy
+                  <strong>problem solving</strong> and turning ideas into clear,
+                  easy-to-use interfaces. I'm also building my skills in
+                  Node.js, Express and automated testing.
+                </p>
+
+                <p>
+                  My experience in translation and localization has taught me to
+                  pay attention to detail, communicate clearly and consider the
+                  people I'm creating something for.
+                </p>
+
+                <p>
+                  I'd like to bring that mix of technical skills and experience
+                  to a frontend team, building useful applications and learning
+                  from the people I work with.
+                </p>
               </div>
             </div>
           </div>
-        </div>
-        <section class="portfolio-contact" id="contact" aria-labelledby="contact-heading" tabindex="-1">
-          <p class="contact-eyebrow">CONTACT</p>
-          <h2 id="contact-heading">Let’s work together</h2>
-          <p class="contact-intro">Have a frontend opportunity in mind? I’d be happy to hear from you.</p>
-          <div class="contact-actions">
-            <a class="contact-primary" href="mailto:alvarodaviladev@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i>Email me</a>
-            <a href="https://www.linkedin.com/in/alvarodavilapinto/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (opens in a new tab)"><i class="fa-brands fa-linkedin" aria-hidden="true"></i>LinkedIn</a>
-            <a href="https://github.com/adaviladev" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile (opens in a new tab)"><i class="fa-brands fa-github" aria-hidden="true"></i>GitHub</a>
+          <div class="accordion-item bg-transparent tech stack">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed d-block text-center fs-4"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                Tech Stack<span class="disclosure-sign" aria-hidden="true"
+                  ><span class="disclosure-plus">+</span
+                  ><span class="disclosure-minus">−</span></span
+                >
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body tech-stack">
+                <p class="tech-stack-intro">
+                  My frontend toolkit, supported by backend fundamentals and
+                  automated testing.
+                </p>
+                <div class="tech-stack-groups">
+                  <section
+                    class="tech-stack-group"
+                    aria-labelledby="tech-group-1"
+                  >
+                    <h3 id="tech-group-1">Frontend</h3>
+                    <ul class="tech-stack-list" role="list">
+                      <li>
+                        <i class="fa-brands fa-html5" aria-hidden="true"></i
+                        ><span>HTML5</span>
+                      </li>
+                      <li>
+                        <i class="fa-brands fa-css3-alt" aria-hidden="true"></i
+                        ><span>CSS3</span>
+                      </li>
+                      <li>
+                        <i class="fa-brands fa-js" aria-hidden="true"></i
+                        ><span>JavaScript</span>
+                      </li>
+                      <li>
+                        <i class="fa-brands fa-react" aria-hidden="true"></i
+                        ><span>React</span>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-code" aria-hidden="true"></i
+                        ><span>Next.js</span>
+                      </li>
+                    </ul>
+                  </section>
+                  <section
+                    class="tech-stack-group"
+                    aria-labelledby="tech-group-2"
+                  >
+                    <h3 id="tech-group-2">Styling</h3>
+                    <ul class="tech-stack-list" role="list">
+                      <li>
+                        <i class="fa-solid fa-palette" aria-hidden="true"></i
+                        ><span>Tailwind CSS</span>
+                      </li>
+                      <li>
+                        <i class="fa-brands fa-bootstrap" aria-hidden="true"></i
+                        ><span>Bootstrap</span>
+                      </li>
+                      <li>
+                        <i class="fa-brands fa-sass" aria-hidden="true"></i
+                        ><span>Sass</span>
+                      </li>
+                    </ul>
+                  </section>
+                  <section
+                    class="tech-stack-group"
+                    aria-labelledby="tech-group-3"
+                  >
+                    <h3 id="tech-group-3">Backend foundations</h3>
+                    <ul class="tech-stack-list" role="list">
+                      <li>
+                        <i class="fa-brands fa-node-js" aria-hidden="true"></i
+                        ><span>Node.js</span>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-server" aria-hidden="true"></i
+                        ><span>Express</span>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-database" aria-hidden="true"></i
+                        ><span>PostgreSQL</span>
+                      </li>
+                    </ul>
+                  </section>
+                  <section
+                    class="tech-stack-group"
+                    aria-labelledby="tech-group-4"
+                  >
+                    <h3 id="tech-group-4">Tools & testing</h3>
+                    <ul class="tech-stack-list" role="list">
+                      <li>
+                        <i class="fa-brands fa-git-alt" aria-hidden="true"></i
+                        ><span>Git</span>
+                      </li>
+                      <li>
+                        <i class="fa-brands fa-figma" aria-hidden="true"></i
+                        ><span>Figma</span>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-bolt" aria-hidden="true"></i
+                        ><span>Vite</span>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-check" aria-hidden="true"></i
+                        ><span>Mocha</span>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-check" aria-hidden="true"></i
+                        ><span>Supertest</span>
+                      </li>
+                    </ul>
+                  </section>
+                </div>
+              </div>
+            </div>
           </div>
-          <p class="contact-email"><a href="mailto:alvarodaviladev@gmail.com">alvarodaviladev@gmail.com</a></p>
-          <p class="contact-phone">Phone: <a href="tel:+56981838598">+56 9 8183 8598</a></p>
-          <a class="back-to-top" href="#top">Back to top <span aria-hidden="true">↑</span></a>
-        </section>
+          <section
+            class="portfolio-contact"
+            id="contact"
+            aria-labelledby="contact-heading"
+            tabindex="-1"
+          >
+            <p class="contact-eyebrow">CONTACT</p>
+            <h2 id="contact-heading">Let’s work together</h2>
+            <p class="contact-intro">
+              Have a frontend opportunity in mind? I’d be happy to hear from
+              you.
+            </p>
+            <div class="contact-actions">
+              <a class="contact-primary" href="mailto:alvarodaviladev@gmail.com"
+                ><i class="fa-solid fa-envelope" aria-hidden="true"></i>Email
+                me</a
+              >
+              <a
+                href="https://www.linkedin.com/in/alvarodavilapinto/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn profile (opens in a new tab)"
+                ><i class="fa-brands fa-linkedin" aria-hidden="true"></i
+                >LinkedIn</a
+              >
+              <a
+                href="https://github.com/adaviladev"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub profile (opens in a new tab)"
+                ><i class="fa-brands fa-github" aria-hidden="true"></i>GitHub</a
+              >
+            </div>
+            <p class="contact-email">
+              <a href="mailto:alvarodaviladev@gmail.com"
+                >alvarodaviladev@gmail.com</a
+              >
+            </p>
+            <p class="contact-phone">
+              Phone: <a href="tel:+56981838598">+56 9 8183 8598</a>
+            </p>
+            <a class="back-to-top" href="#top"
+              >Back to top <span aria-hidden="true">↑</span></a
+            >
+          </section>
+        </div>
       </div>
-    </div>
-  </main>
-  <!-- Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-</body>
-
+    </main>
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
