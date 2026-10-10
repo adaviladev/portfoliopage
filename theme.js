@@ -18,11 +18,15 @@
 
     const updateButton = () => {
       const isLight = root.dataset.theme === 'light';
-      const label = isLight ? 'Light mode' : 'Dark mode';
+      const isSpanish = root.lang === 'es';
+      const label = isSpanish ? (isLight ? 'Modo claro' : 'Modo oscuro') : (isLight ? 'Light mode' : 'Dark mode');
       button.querySelector('.theme-label').textContent = label;
       button.querySelector('.theme-icon').textContent = isLight ? '☀' : '☾';
-      button.setAttribute('aria-label', `${label}. Switch to ${isLight ? 'dark' : 'light'} mode`);
+      button.setAttribute('aria-label', isSpanish
+        ? `${label}. Cambiar a modo ${isLight ? 'oscuro' : 'claro'}`
+        : `${label}. Switch to ${isLight ? 'dark' : 'light'} mode`);
     };
+    document.addEventListener('languagechange', updateButton);
     updateButton();
     controls.hidden = false;
 

@@ -966,3 +966,28 @@ main.hero {
     background-color: var(--accent) !important;
   }
 }
+
+/* Language comes before theme; controls wrap on narrow screens. */
+.theme-controls {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .75rem;
+}
+.language-toggle[hidden] { display: none !important; }
+.theme-controls .language-toggle {
+  min-height: 44px;
+  width: auto !important;
+  max-width: 100%;
+  padding: .5rem .75rem;
+  border: 1px solid var(--subtle) !important;
+  border-radius: 0;
+  font-family: "Play", sans-serif;
+  font-size: 1rem;
+  color: var(--text);
+  background-color: var(--panel-bg) !important;
+}
+.theme-controls .language-toggle:hover {
+  background-color: var(--tag-bg) !important;
+}
