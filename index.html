@@ -6,6 +6,7 @@
     <title>Adaviladev's Portfolio Page</title>
     <script src="theme.js"></script>
     <script src="language.js" defer></script>
+    <script src="chat.js" defer></script>
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css" />
     <!-- Fonts -->
@@ -617,6 +618,25 @@
                   to a frontend team, building useful applications and learning
                   from the people I work with.
                 </p>
+          <aside class="portfolio-chat" aria-labelledby="chat-heading" hidden>
+            <header class="chat-header">
+              <h3 class="chat-title">
+                <button type="button" class="chat-minimize" aria-expanded="false" aria-controls="chat-content" title="Expand assistant"><span id="chat-heading"></span><span class="chat-window-icon" aria-hidden="true"></span></button>
+              </h3>
+            </header>
+            <div id="chat-content" hidden>
+              <p class="chat-eyebrow"></p>
+              <p class="chat-description"></p>
+            <div class="chat-log" role="log" aria-live="polite" aria-relevant="additions text" tabindex="0"></div>
+            <div class="chat-questions" role="group">
+              <button type="button" data-chat-question="about"></button>
+              <button type="button" data-chat-question="skills"></button>
+              <button type="button" data-chat-question="projects"></button>
+              <button type="button" data-chat-question="contact"></button>
+            </div>
+            <button type="button" class="chat-reset"></button>
+            </div>
+          </aside>
               </div>
             </div>
           </div>

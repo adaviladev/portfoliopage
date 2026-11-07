@@ -91,13 +91,13 @@
     const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
     while (walker.nextNode()) {
       const node = walker.currentNode;
-      if (node.parentElement.closest('script, style, .theme-toggle, .language-toggle')) continue;
+      if (node.parentElement.closest('script, style, .theme-toggle, .language-toggle, .portfolio-chat')) continue;
       const original = node.nodeValue;
       if (translate(original.trim()) !== original.trim()) texts.push({ node, original });
     }
     const attributes = [];
     document.querySelectorAll('[aria-label], [alt]').forEach(node => {
-      if (node.matches('.theme-toggle, .language-toggle')) return;
+      if (node.matches('.theme-toggle, .language-toggle') || node.closest('.portfolio-chat')) return;
       for (const name of ['aria-label', 'alt']) {
         const original = node.getAttribute(name);
         if (original && translate(original) !== original) attributes.push({node, name, original});
